@@ -5,6 +5,9 @@ import javafx.scene.control.*;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
+import models.Inventory;
+import models.Medicine;
+
 public class AdminDashboard {
     private Inventory inventory;
 

@@ -9,6 +9,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
+import models.Inventory;
 
 public class Main extends Application {
     private Inventory inventory = new Inventory();
