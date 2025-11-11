@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="ui.SignupForm"
+            prefWidth="450" prefHeight="600"
+            styleClass="root">
+
+    <children>
+        <VBox alignment="CENTER" spacing="15" AnchorPane.topAnchor="30" AnchorPane.leftAnchor="40" AnchorPane.rightAnchor="40"
+              styleClass="glass-pane">
+
+            <!-- Title -->
+            <Label text="Sign Up for MediMart" styleClass="title-label"/>
+
+            <!-- Input Fields -->
+            <TextField fx:id="firstNameField" promptText="First Name" styleClass="text-field"/>
+            <TextField fx:id="lastNameField" promptText="Last Name" styleClass="text-field"/>
+            <TextField fx:id="emailField" promptText="Email" styleClass="text-field"/>
+            <PasswordField fx:id="passwordField" promptText="Password" styleClass="password-field"/>
+            <PasswordField fx:id="confirmPasswordField" promptText="Confirm Password" styleClass="password-field"/>
+            <TextField fx:id="phoneField" promptText="Phone Number" styleClass="text-field"/>
+
+            <!-- Buttons -->
+            <HBox alignment="CENTER" spacing="20">
+                <Button fx:id="signupBtn" text="Sign Up" styleClass="btn-signup" maxWidth="100"/>
+                <Button fx:id="backBtn" text="Back" styleClass="btn-back" maxWidth="100"/>
+            </HBox>
+
+            <!-- Message Label -->
+            <Label fx:id="messageLabel" text="" styleClass="message-label" wrapText="true" maxWidth="300"/>
+
+        </VBox>
+    </children>
+</AnchorPane>

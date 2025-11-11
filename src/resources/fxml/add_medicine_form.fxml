@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Pos?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="ui.AddMedicineForm">
+    <children>
+        <!-- Title label -->
+        <Label text="Add New Medicine" style="-fx-font-size: 20px; -fx-font-weight: bold;" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="20"/>
+
+        <!-- Form GridPane -->
+        <GridPane hgap="10" vgap="10" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="80">
+            <children>
+                <!-- ID Field -->
+                <Label text="ID:" />
+                <TextField fx:id="idField" promptText="Enter ID" GridPane.columnIndex="1" />
+
+                <!-- Name Field -->
+                <Label text="Name:" />
+                <TextField fx:id="nameField" promptText="Enter Medicine Name" GridPane.rowIndex="1" GridPane.columnIndex="1" />
+
+                <!-- Category Field -->
+                <Label text="Category:" />
+                <TextField fx:id="categoryField" promptText="Enter Category" GridPane.rowIndex="2" GridPane.columnIndex="1" />
+
+                <!-- Price Field -->
+                <Label text="Price:" />
+                <TextField fx:id="priceField" promptText="Enter Price" GridPane.rowIndex="3" GridPane.columnIndex="1" />
+
+                <!-- Quantity Field -->
+                <Label text="Quantity:" />
+                <TextField fx:id="qtyField" promptText="Enter Quantity" GridPane.rowIndex="4" GridPane.columnIndex="1" />
+
+                <!-- Expiry Field -->
+                <Label text="Expiry:" />
+                <TextField fx:id="expiryField" promptText="Enter Expiry Date" GridPane.rowIndex="5" GridPane.columnIndex="1" />
+
+                <!-- Buttons -->
+                <Button fx:id="addBtn" text="Add Medicine" GridPane.rowIndex="6" GridPane.columnIndex="1" />
+                <Button fx:id="backBtn" text="Back" GridPane.rowIndex="6" GridPane.columnIndex="0" />
+            </children>
+        </GridPane>
+
+        <!-- Status Message -->
+        <Label fx:id="status" style="-fx-text-fill: red;" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="350"/>
+    </children>
+</AnchorPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="ui.AdminDashboard" padding="20, 20, 20, 20">
+    <!-- TableView for displaying medicine details -->
+    <TableView fx:id="medicineTable" prefWidth="800" prefHeight="300" AnchorPane.topAnchor="10" AnchorPane.leftAnchor="10">
+        <columns>
+            <TableColumn fx:id="idCol" text="ID" />
+            <TableColumn fx:id="nameCol" text="Name" />
+            <TableColumn fx:id="catCol" text="Category" />
+            <TableColumn fx:id="priceCol" text="Price" />
+            <TableColumn fx:id="qtyCol" text="Quantity" />
+            <TableColumn fx:id="expCol" text="Expiry" />
+        </columns>
+    </TableView>
+
+    <!-- Buttons below the table -->
+    <HBox fx:id="buttonBox" spacing="20" alignment="CENTER" AnchorPane.topAnchor="320" AnchorPane.leftAnchor="10">
+        <children>
+            <Button fx:id="addBtn" text="Add Medicine"/>
+            <Button fx:id="editBtn" text="Edit Selected"/>
+            <Button fx:id="deleteBtn" text="Delete Selected"/>
+            <Button fx:id="backBtn" text="Back to Home"/>
+        </children>
+    </HBox>
+</AnchorPane>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MediMart • Login</title>
+    <link rel="icon" href="images/logo_medimart.png" />
+    <style>
+        :root{--brand1:#4CAF50;--brand2:#2196F3;--bg1:#E0F7FA;--bg2:#E8F5E9}
+        body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:linear-gradient(135deg,var(--bg1),var(--bg2))}
+        .wrap{max-width:400px;margin:40px auto;padding:0 12px}
+        .card{background:#fff;border:1px solid #e0f2f1;border-radius:14px;box-shadow:0 4px 12px rgba(0,0,0,.06);padding:20px}
+        h1{margin:0 0 16px;font-size:22px;background:linear-gradient(45deg,var(--brand1),var(--brand2));
+           -webkit-background-clip:text;background-clip:text;color:transparent;font-weight:800}
+        input,button{width:100%;font:inherit;padding:10px 12px;border-radius:12px;border:1px solid #B2DFDB;margin:6px 0}
+        input:focus{outline:none;border-color:#26A69A;box-shadow:0 0 0 3px rgba(38,166,154,.18)}
+        button{background:linear-gradient(45deg,var(--brand1),var(--brand2));color:#fff;border:none;cursor:pointer;font-weight:700}
+        .muted{color:#607d8b;text-align:center}
+        a{color:#0d47a1;text-decoration:none}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="card">
+        <h1>Login</h1>
+        <input id="email" type="email" placeholder="Email" />
+        <input id="pass" type="password" placeholder="Password" />
+        <button id="login">Sign In</button>
+        <p class="muted">No account? <a href="signup.html">Create one</a>.</p>
+    </div>
+</div>
+<script>
+    document.querySelector('#login').onclick = () => {
+      alert('Demo-only login. Hook to your Java user service or a backend for real auth.');
+      location.href = 'index.html';
+    };
+</script>
+</body>
+</html>
+>
