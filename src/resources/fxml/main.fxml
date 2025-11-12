@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<StackPane fx:id="root" xmlns="http://javafx.com/javafx/25"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="ui.MainController"
+           prefWidth="1200" prefHeight="780"
+           style="-fx-background-color: linear-gradient(to bottom right,#B2EBF2,#C8E6C9);">
+
+    <children>
+        <!-- ===== Dynamic Background Carousel (NO veil) ===== -->
+        <StackPane fx:id="bgStack" maxWidth="Infinity" maxHeight="Infinity">
+            <children>
+                <ImageView fx:id="bg1" preserveRatio="false" opacity="1.0"  mouseTransparent="true"/>
+                <ImageView fx:id="bg2" preserveRatio="false" opacity="0.0"  mouseTransparent="true"/>
+                <ImageView fx:id="bg3" preserveRatio="false" opacity="0.0"  mouseTransparent="true"/>
+                <ImageView fx:id="bg4" preserveRatio="false" opacity="0.0"  mouseTransparent="true"/>
+            </children>
+        </StackPane>
+
+        <!-- ===== Scrollable Main Content ===== -->
+        <ScrollPane fx:id="scroller" fitToWidth="true" hbarPolicy="NEVER" vbarPolicy="AS_NEEDED"
+                    style="-fx-background-color: transparent;">
+            <content>
+                <VBox spacing="32" alignment="TOP_CENTER" fillWidth="true">
+
+                    <!-- HERO -->
+                    <StackPane maxWidth="1200">
+                        <padding><Insets top="24" right="24" bottom="24" left="24"/></padding>
+                        <children>
+                            <!-- NOTE: Removed the semi-transparent white Region here to avoid any veil -->
+
+                            <VBox fx:id="heroCard" spacing="24" alignment="CENTER">
+                                <padding><Insets top="36" right="36" bottom="36" left="36"/></padding>
+
+                                <ImageView fx:id="logoView" fitHeight="120" preserveRatio="true" smooth="true"/>
+
+                                <Label text="Your Trusted Online Pharmacy"
+                                       style="-fx-font-size:36px; -fx-font-weight:800; -fx-text-fill:white;"/>
+                                <Label text="Search medicines, explore categories, and get doorstep delivery."
+                                       style="-fx-font-size:15px; -fx-text-fill:rgba(255,255,255,0.9);"/>
+
+                                <HBox spacing="8" alignment="CENTER">
+                                    <children>
+                                        <TextField fx:id="globalSearch" promptText="Search medicine or brand"
+                                                   prefWidth="560"
+                                                   style="-fx-background-color:#FFFFFF; -fx-background-radius:999; -fx-padding:10 16; -fx-font-size:14px;"/>
+                                        <Button fx:id="searchBtn" text="Search"
+                                                style="-fx-background-color:#26A69A; -fx-text-fill:white; -fx-font-weight:bold; -fx-background-radius:999; -fx-padding:10 22;"/>
+                                    </children>
+                                </HBox>
+
+                                <HBox spacing="16" alignment="CENTER">
+                                    <children>
+                                        <Button fx:id="adminBtn" text="Login as Admin"
+                                                style="-fx-background-color:#26A69A; -fx-text-fill:white; -fx-font-weight:bold; -fx-background-radius:999; -fx-padding:12 24;"/>
+                                        <Button fx:id="customerBtn" text="Login / Sign Up"
+                                                style="-fx-background-color:#2196F3; -fx-text-fill:white; -fx-font-weight:bold; -fx-background-radius:999; -fx-padding:12 24;"/>
+                                    </children>
+                                </HBox>
+                            </VBox>
+                        </children>
+                    </StackPane>
+
+                    <!-- CATEGORY SECTION -->
+                    <VBox maxWidth="1200" spacing="16" alignment="CENTER">
+                        <padding><Insets top="0" right="24" bottom="0" left="24"/></padding>
+                        <children>
+                            <Label text="Shop by Category"
+                                   style="-fx-font-size:24px; -fx-font-weight:800; -fx-text-fill:#FFFFFFEE;"/>
+                            <FlowPane fx:id="categoryFlow" hgap="14" vgap="14" prefWrapLength="1000" alignment="CENTER"/>
+                        </children>
+                    </VBox>
+
+                    <!-- FEATURES (with image tooltips) -->
+                    <HBox fx:id="featureOverlay" maxWidth="1200" spacing="16" alignment="CENTER">
+                        <padding><Insets top="0" right="24" bottom="0" left="24"/></padding>
+                        <children>
+                            <StackPane HBox.hgrow="ALWAYS"
+                                       style="-fx-background-color: rgba(255,255,255,0.96); -fx-background-radius:16; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.14), 18, 0.25, 0, 6);">
+                                <padding><Insets top="16" right="16" bottom="16" left="16"/></padding>
+                                <children>
+                                    <HBox spacing="12" alignment="CENTER">
+                                        <ImageView fx:id="icoSupport" fitHeight="28" preserveRatio="true"/>
+                                        <VBox alignment="CENTER_LEFT">
+                                            <Label text="24/7 Support" style="-fx-font-weight:bold; -fx-text-fill:#06424a;"/>
+                                            <Label text="Chat anytime" style="-fx-text-fill:#06424aCC;"/>
+                                        </VBox>
+                                    </HBox>
+                                </children>
+                            </StackPane>
+
+                            <StackPane HBox.hgrow="ALWAYS"
+                                       style="-fx-background-color: rgba(255,255,255,0.96); -fx-background-radius:16; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.14), 18, 0.25, 0, 6);">
+                                <padding><Insets top="16" right="16" bottom="16" left="16"/></padding>
+                                <children>
+                                    <HBox spacing="12" alignment="CENTER">
+                                        <ImageView fx:id="icoFast" fitHeight="28" preserveRatio="true"/>
+                                        <VBox alignment="CENTER_LEFT">
+                                            <Label text="Fast Delivery" style="-fx-font-weight:bold; -fx-text-fill:#06424a;"/>
+                                            <Label text="Same/Next day" style="-fx-text-fill:#06424aCC;"/>
+                                        </VBox>
+                                    </HBox>
+                                </children>
+                            </StackPane>
+
+                            <StackPane HBox.hgrow="ALWAYS"
+                                       style="-fx-background-color: rgba(255,255,255,0.96); -fx-background-radius:16; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.14), 18, 0.25, 0, 6);">
+                                <padding><Insets top="16" right="16" bottom="16" left="16"/></padding>
+                                <children>
+                                    <HBox spacing="12" alignment="CENTER">
+                                        <ImageView fx:id="icoGenuine" fitHeight="28" preserveRatio="true"/>
+                                        <VBox alignment="CENTER_LEFT">
+                                            <Label text="Genuine Medicines" style="-fx-font-weight:bold; -fx-text-fill:#06424a;"/>
+                                            <Label text="Trusted sources" style="-fx-text-fill:#06424aCC;"/>
+                                        </VBox>
+                                    </HBox>
+                                </children>
+                            </StackPane>
+                        </children>
+                    </HBox>
+
+                    <!-- PARTNERS -->
+                    <HBox maxWidth="1200" spacing="28" alignment="CENTER">
+                        <padding><Insets top="0" right="24" bottom="36" left="24"/></padding>
+                        <children>
+                            <ImageView fx:id="p1" fitHeight="32" preserveRatio="true"/>
+                            <ImageView fx:id="p2" fitHeight="32" preserveRatio="true"/>
+                            <ImageView fx:id="p3" fitHeight="32" preserveRatio="true"/>
+                            <ImageView fx:id="p4" fitHeight="32" preserveRatio="true"/>
+                        </children>
+                    </HBox>
+
+                    <!-- FOOTER -->
+                    <VBox alignment="CENTER" spacing="6">
+                        <padding><Insets top="0" right="0" bottom="24" left="0"/></padding>
+                        <children>
+                            <Label text="© MediMart — All rights reserved" style="-fx-text-fill:#FFFFFFDD;"/>
+                        </children>
+                    </VBox>
+                </VBox>
+            </content>
+        </ScrollPane>
+
+        <!-- CAROUSEL DOTS -->
+        <HBox fx:id="dotBar" spacing="8" alignment="CENTER" mouseTransparent="false">
+            <StackPane.alignment>BOTTOM_CENTER</StackPane.alignment>
+            <padding><Insets bottom="18"/></padding>
+            <children>
+                <Circle fx:id="dot1" radius="5" style="-fx-fill:white; -fx-opacity:0.95;"/>
+                <Circle fx:id="dot2" radius="5" style="-fx-fill:white; -fx-opacity:0.5;"/>
+                <Circle fx:id="dot3" radius="5" style="-fx-fill:white; -fx-opacity:0.5;"/>
+                <Circle fx:id="dot4" radius="5" style="-fx-fill:white; -fx-opacity:0.5;"/>
+            </children>
+        </HBox>
+    </children>
+</StackPane>

@@ -44,6 +44,7 @@ public class CustomerDashboard {
     private Label cartBadge;
     private Button cartButton;
     private Button profileButton;
+    private ScrollPane scroller;
 
     private final Map<String, Image> imageCache = new ConcurrentHashMap<>();
     private ScheduledExecutorService poller;
@@ -51,6 +52,13 @@ public class CustomerDashboard {
 
     private volatile long lastRefreshMs = 0L;
     private String lastDataSignature = "";
+
+    // ====== Responsive layout tuning ======
+    private static final double CARD_PREF_WIDTH = 220;   // approximate card width
+    private static final double GRID_HGAP = 22;          // horizontal gap between cards
+    private static final int MIN_COLS = 1;
+    private static final int MAX_COLS = 6;
+    private int lastCols = -1; // remember last computed column count to avoid unnecessary rebuilds
 
     // --- Constructors ---
     public CustomerDashboard() { this(Inventory.getInstance(), new MedicineService(), false); }
@@ -74,6 +82,7 @@ public class CustomerDashboard {
         HBox topButtons = new HBox(12, profileNode, cartNode);
         topButtons.setAlignment(Pos.CENTER_RIGHT);
 
+        // Search + Sort
         searchField = new TextField();
         searchField.setPromptText("Search medicine...");
         styleSearch(searchField);
@@ -88,24 +97,37 @@ public class CustomerDashboard {
         HBox controls = new HBox(14, searchField, sortBox);
         controls.setAlignment(Pos.CENTER_LEFT);
 
+        // Status
         statusBar = new Label("Ready");
         statusBar.setStyle("-fx-text-fill: rgba(0,0,0,0.65);");
+
         VBox header = new VBox(4, title, topButtons, controls, statusBar);
         header.setPadding(new Insets(10));
 
-        // === Category container ===
+        // Category container
         categoryContainer = new VBox(20);
         categoryContainer.setPadding(new Insets(20, 20, 40, 20));
 
-        ScrollPane scroller = new ScrollPane(categoryContainer);
+        scroller = new ScrollPane(categoryContainer);
         scroller.setFitToWidth(true);
         scroller.setVbarPolicy(ScrollPane.ScrollBarPolicy.AS_NEEDED);
         scroller.setStyle("-fx-background-color: transparent; -fx-background-insets: 0;");
 
+        // 🔄 Responsive: recompute columns when viewport size changes
+        scroller.viewportBoundsProperty().addListener((obs, ov, nv) -> {
+            categoryContainer.setPrefWidth(nv.getWidth());
+            int cols = computeCols(nv.getWidth());
+            if (cols != lastCols) {
+                lastCols = cols;
+                refreshCategoryView();
+            }
+        });
+
         Button back = new Button("Back");
         back.setStyle("-fx-background-color: linear-gradient(to right, #f44336, #e53935); "
                 + "-fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 20; -fx-padding: 6 14;");
-        back.setOnAction(e -> new Main().start(stage));
+        back.setOnAction(e -> goBackToHome(stage)); // wrap call safely
+
         HBox backBox = new HBox(back);
         backBox.setAlignment(Pos.CENTER);
         backBox.setPadding(new Insets(10));
@@ -117,10 +139,15 @@ public class CustomerDashboard {
         root.setStyle("-fx-background-color: linear-gradient(to bottom right, #E0F7FA, #E8F5E9);");
 
         Scene scene = new Scene(root, 1000, 700);
+        // 🔄 Also recompute when the whole window resizes (e.g., maximize)
+        scene.widthProperty().addListener((o, ov, nv) -> requestRelayout());
+        scene.heightProperty().addListener((o, ov, nv) -> requestRelayout());
+
         stage.setScene(scene);
         stage.setTitle("Customer Dashboard");
         stage.show();
 
+        // Initial population
         refreshMedicines();
         try { medicineService.addChangeListener(this::refreshMedicines); } catch (Throwable ignored) {}
 
@@ -134,23 +161,60 @@ public class CustomerDashboard {
             if (poller != null) poller.shutdownNow();
         });
 
-        updateCartBadge();
+        updateCartBadge(); // initial state
     }
 
-    private void viewProfile(Stage stage) {
-        new ProfileView().show(stage);
+    private void requestRelayout() {
+        // Use current viewport width if available
+        double w = (scroller != null && scroller.getViewportBounds() != null)
+                ? scroller.getViewportBounds().getWidth()
+                : categoryContainer.getWidth();
+
+        int cols = computeCols(w);
+        if (cols != lastCols) {
+            lastCols = cols;
+            refreshCategoryView();
+        }
     }
 
+    private int computeCols(double availableWidth) {
+        if (availableWidth <= 0) return (lastCols > 0 ? lastCols : 3);
+        // Effective width after padding (mirror container padding left+right ≈ 40)
+        double effective = Math.max(availableWidth - 40, CARD_PREF_WIDTH);
+        int cols = (int) Math.floor((effective + GRID_HGAP) / (CARD_PREF_WIDTH + GRID_HGAP));
+        cols = Math.max(MIN_COLS, Math.min(MAX_COLS, cols));
+        return cols;
+    }
+
+    // Safe wrapper for returning home
+    private void goBackToHome(Stage stage) {
+        try {
+            new Main().start(stage);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            showError("Failed to open Home: " + ex.getMessage());
+        }
+    }
+
+    private void viewProfile(Stage stage) { new ProfileView().show(stage); }
+
+    // === Category View ===
     private void refreshCategoryView() {
         categoryContainer.getChildren().clear();
         List<Medicine> filtered = getFilteredSorted();
+
         Map<String, List<Medicine>> grouped = filtered.stream()
                 .collect(Collectors.groupingBy(m -> safe(m.getCategory()), TreeMap::new, Collectors.toList()));
+
+        // Use latest computed columns; if unknown, compute from current width
+        int cols = (lastCols > 0) ? lastCols
+                : computeCols(scroller != null && scroller.getViewportBounds() != null
+                ? scroller.getViewportBounds().getWidth()
+                : categoryContainer.getWidth());
 
         for (var entry : grouped.entrySet()) {
             String category = entry.getKey();
             List<Medicine> meds = entry.getValue();
-
             if (meds.isEmpty()) continue;
 
             Label header = new Label(category);
@@ -164,16 +228,17 @@ public class CustomerDashboard {
             """);
 
             GridPane grid = new GridPane();
-            grid.setHgap(22);
+            grid.setHgap(GRID_HGAP);
             grid.setVgap(22);
             grid.setPadding(new Insets(10, 0, 0, 0));
 
             int col = 0, row = 0;
             for (Medicine m : meds) {
                 VBox card = createMedicineCard(m);
+                card.setPrefWidth(CARD_PREF_WIDTH);
                 grid.add(card, col, row);
                 col++;
-                if (col > 3) { col = 0; row++; }
+                if (col >= cols) { col = 0; row++; }
             }
 
             VBox section = new VBox(10, header, grid);
@@ -210,6 +275,7 @@ public class CustomerDashboard {
 
     private VBox createMedicineCard(Medicine m) {
         Node imageNode = loadImageNodeForMedicine(m);
+
         Label name = new Label(safe(m.getName()));
         name.setStyle("-fx-font-size: 15px; -fx-font-weight: bold;");
 
@@ -262,14 +328,18 @@ public class CustomerDashboard {
         return card;
     }
 
+    // === Robust image loader with background loading + fallbacks ===
     private Node loadImageNodeForMedicine(Medicine m) {
         Image img = null;
         String p = (m.getImagePath() == null || m.getImagePath().isBlank()) ? null : m.getImagePath().trim();
+
         if (p != null) img = loadImageFile(p, 140, 120);
         if (img == null && m.getName() != null)
             img = loadImageFromClasspath("/images/" + m.getName().trim() + ".jpg", 140, 120);
         if (img == null)
             img = loadImageFromClasspath("/images/Placeholder.jpg", 140, 120);
+        if (img == null) // final guard
+            img = new Image("file:src/resources/images/Placeholder.jpg", 140, 120, true, true, true);
 
         ImageView iv = new ImageView(img);
         iv.setFitWidth(140);
@@ -291,8 +361,8 @@ public class CustomerDashboard {
             try {
                 URL url = getClass().getResource(k);
                 if (url != null) return new Image(url.toExternalForm(), w, h, true, true, true);
-            } catch (Exception ignored) {}
-            return new Image("file:src/resources/images/Placeholder.jpg", w, h, true, true, true);
+            } catch (Exception ignored) { }
+            return null;
         });
     }
 
@@ -301,6 +371,7 @@ public class CustomerDashboard {
                 new Image("file:" + k, w, h, true, true, true));
     }
 
+    // === Cart ===
     private void addToCart(Medicine medicine, int quantity) {
         cartData.add(new OrderItem(medicine, quantity));
     }
@@ -309,16 +380,21 @@ public class CustomerDashboard {
         new CartView(cartData).show(stage);
     }
 
+    // === Data refresh (async, throttled) ===
     public void refreshMedicines() {
         long now = System.currentTimeMillis();
         if (now - lastRefreshMs < 1500) return;
         lastRefreshMs = now;
+
         setStatus("Refreshing...");
         CompletableFuture.supplyAsync(() -> {
             try {
                 return medicineService.getAllMedicines();
-            } catch (Exception e) {
-                FileLogger.error("Refresh failed: " + e.getMessage(), e);
+            } catch (AppException ex) {
+                FileLogger.error("Refresh failed: " + ex.getMessage(), ex);
+                return null;
+            } catch (Throwable t) {
+                FileLogger.error("Unexpected error: " + t.getMessage(), t);
                 return null;
             }
         }).thenAccept(list -> Platform.runLater(() -> {
@@ -330,7 +406,9 @@ public class CustomerDashboard {
                     refreshCategoryView();
                 }
                 setStatus("Refreshed");
-            } else setStatus("Refresh failed");
+            } else {
+                setStatus("Refresh failed");
+            }
         }));
     }
 
@@ -338,17 +416,21 @@ public class CustomerDashboard {
         StringBuilder sb = new StringBuilder();
         for (Medicine m : list) {
             sb.append(m.getId()).append('|')
-                    .append(m.getName()).append('|')
-                    .append(m.getCategory()).append('|')
+                    .append(nz(m.getName())).append('|')
+                    .append(nz(m.getCategory())).append('|')
                     .append(m.getPrice()).append('|')
-                    .append(m.getQuantity()).append('\n');
+                    .append(m.getQuantity()).append('|')
+                    .append(nz(m.getExpiryDate())).append('|')
+                    .append(nz(m.getImagePath())).append('\n');
         }
         return sb.toString();
     }
 
+    private static String nz(String s) { return s == null ? "" : s; }
     private static String safe(String s) { return s == null ? "" : s; }
     private void setStatus(String text) { if (statusBar != null) statusBar.setText(text); }
 
+    // === Buttons ===
     private Node buildIconButton(String icon, String tooltip, String color, javafx.event.EventHandler<javafx.event.ActionEvent> click) {
         profileButton = new Button();
         profileButton.setStyle("-fx-background-color: " + color + "; -fx-background-radius: 999; -fx-padding: 8 12;");
@@ -366,6 +448,7 @@ public class CustomerDashboard {
         cartButton.setStyle("-fx-background-color: " + color + "; -fx-background-radius: 999; -fx-padding: 8 14;");
         cartButton.setOnAction(click);
         ImageView iv = loadIcon(icon);
+
         cartBadge = new Label();
         cartBadge.setStyle("""
             -fx-background-color: #E53935; -fx-text-fill: white;
@@ -373,8 +456,12 @@ public class CustomerDashboard {
             -fx-background-radius: 999; -fx-padding: 1 4;
         """);
         cartBadge.setVisible(false);
+
         StackPane iconWithBadge = new StackPane(iv, cartBadge);
         StackPane.setAlignment(cartBadge, Pos.TOP_RIGHT);
+        cartBadge.setTranslateX(8);
+        cartBadge.setTranslateY(-8);
+
         HBox box = new HBox(6, iconWithBadge, new Label(tooltip){{
             setStyle("-fx-text-fill:white;-fx-font-weight:bold;");
         }});
@@ -384,7 +471,8 @@ public class CustomerDashboard {
 
     private ImageView loadIcon(String path) {
         URL url = getClass().getResource(path);
-        Image img = (url != null) ? new Image(url.toExternalForm(), 24, 24, true, true, true)
+        Image img = (url != null)
+                ? new Image(url.toExternalForm(), 24, 24, true, true, true)
                 : new Image("file:src/resources/images/Placeholder.jpg", 24, 24, true, true, true);
         ImageView iv = new ImageView(img);
         iv.setFitWidth(24);
@@ -395,12 +483,19 @@ public class CustomerDashboard {
 
     private void updateCartBadge() {
         int count = cartData.size();
+        if (cartBadge == null) return;
         if (count > 0) {
             cartBadge.setText(String.valueOf(count));
             cartBadge.setVisible(true);
         } else {
             cartBadge.setVisible(false);
         }
+    }
+
+    private void showError(String msg) {
+        Alert a = new Alert(Alert.AlertType.ERROR, msg, ButtonType.OK);
+        a.setHeaderText("Operation failed");
+        a.showAndWait();
     }
 
     private static void styleSearch(TextField tf) {
