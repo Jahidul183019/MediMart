@@ -17,7 +17,6 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.StackPane;
-import javafx.scene.layout.VBox;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
 import javafx.util.Duration;
@@ -46,7 +45,8 @@ public class MainController {
     @FXML private TextField globalSearch;
     @FXML private Button searchBtn, adminBtn, customerBtn;
 
-    @FXML private VBox heroCard;
+    // In FXML heroCard is a StackPane, so:
+    @FXML private StackPane heroCard;
 
     // navigation
     private Stage stage;
@@ -119,8 +119,8 @@ public class MainController {
 
     public void initialize() {
         makeScrollPaneTransparent(pageScroll);
-        loadImages();              // logo + p1..p4
-        setupBackgroundSlideshow(); // use p1..p4
+        loadImages();               // logo + p1..p4
+        setupBackgroundSlideshow();  // use p1..p4
         buildCategoryChips();
         setupCTAInteractions();
         setupBackgroundAnimations();
@@ -142,10 +142,13 @@ public class MainController {
 
     /* ---------- Assets ---------- */
     private void loadImages() {
-        // Logo (in src/resources/images/logo_medimart.png)
+        // IMPORTANT: these paths must match how resources are on the classpath.
+        // With src/resources marked as Resources Root, images live at /images/*.png
+
+        // Logo
         setImage(logoView, "/resources/images/logo_medimart.png");
 
-        // Background slides: p1..p4 (in src/resources/images/)
+        // Background slides: p1..p4
         addBgImage("/resources/images/p1.png");
         addBgImage("/resources/images/p2.png");
         addBgImage("/resources/images/p3.png");
