@@ -1,7 +1,9 @@
 package ui;
 
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Rectangle2D;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Screen;
@@ -11,83 +13,77 @@ import services.UserService;
 
 import java.io.File;
 import java.net.URL;
+import java.util.Objects;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Main extends Application {
+
+    private static final Logger LOG = Logger.getLogger(Main.class.getName());
+
+    // shared services
     private final Inventory inventory = Inventory.getInstance();
     private final UserService userService = new UserService();
 
     @Override
-    public void start(Stage stage) throws Exception {
-        // Try classpath first
-        URL cpUrl = Main.class.getResource("/fxml/main.fxml");
-
-        Parent root;
-        FXMLLoader loader;
-
-        if (cpUrl != null) {
-            loader = new FXMLLoader(cpUrl);
-            root = loader.load();
-        } else {
-            // Fallback to source tree during development
-            File fxmlFile = new File("src/resources/fxml/main.fxml"); // <- adjust if your tree differs
-            if (!fxmlFile.exists()) {
-                System.err.println("[Main] FXML not found at classpath:/fxml/main.fxml");
-                System.err.println("[Main] Also missing on disk: " + fxmlFile.getAbsolutePath());
-                throw new IllegalStateException("main.fxml not found. Check resource paths.");
-            }
-            loader = new FXMLLoader(fxmlFile.toURI().toURL());
-            root = loader.load();
-            System.out.println("[Main] Loaded FXML from file: " + fxmlFile.getAbsolutePath());
-        }
-
-        MainController controller = loader.getController();
-        controller.wire(stage, Inventory.getInstance(), new UserService());
-
-        double w = Math.max(1000, Math.min(1280, Screen.getPrimary().getBounds().getWidth() * 0.84));
-        double h = Math.max(680, Math.min(860, Screen.getPrimary().getBounds().getHeight() * 0.86));
-        Scene scene = new Scene(root, w, h);
-
-        stage.setScene(scene);
-        stage.setTitle("MediMart");
-        stage.show();
-    }
-
-
-    // ✅ This is your original openCustomerLogin(...) method merged here directly
-    public void openCustomerLogin(Stage stage) {
+    public void start(Stage stage) {
         try {
-            URL fxmlUrl = getClass().getResource("/fxml/LoginSignup.fxml");
-            javafx.scene.layout.Pane root;
+            Rectangle2D b = Screen.getPrimary().getVisualBounds();
+            double prefW = Math.max(900, Math.min(1200, b.getWidth() * 0.78));
+            double prefH = Math.max(620, Math.min(800, b.getHeight() * 0.82));
+
+            Parent root;
             FXMLLoader loader;
-            if (fxmlUrl != null) {
-                loader = new FXMLLoader(fxmlUrl);
+
+            // 1) Try from jar/classpath
+            URL url = Main.class.getResource("/fxml/main.fxml");
+            if (url != null) {
+                loader = new FXMLLoader(url);
                 root = loader.load();
             } else {
-                File fxmlFile = new File("src/resources/fxml/LoginSignup.fxml");
+                // 2) Dev fallback from source tree
+                File fxmlFile = new File("src/resources/fxml/main.fxml");
                 if (!fxmlFile.exists()) {
-                    System.err.println("FXML not found! Check path: " + fxmlFile.getAbsolutePath());
+                    LOG.severe("FXML not found: " + fxmlFile.getAbsolutePath());
                     return;
                 }
                 loader = new FXMLLoader(fxmlFile.toURI().toURL());
                 root = loader.load();
             }
 
-            LoginSignup controller = loader.getController();
-            controller.setServices(inventory, userService);
+            // 🔗 VERY IMPORTANT: wire the controller so buttons get actions
+            MainController controller = Objects.requireNonNull(
+                    loader.getController(),
+                    "MainController missing in main.fxml"
+            );
+            controller.wire(stage, inventory, userService);
 
-            if (stage.getScene() == null) {
-                Scene scene = new Scene(root, 500, 600);
-                File cssFile = new File("src/resources/css/style.css");
-                if (cssFile.exists()) scene.getStylesheets().add(cssFile.toURI().toString());
-                stage.setScene(scene);
+            Scene scene = new Scene(root, prefW, prefH);
+
+            // optional stylesheet (classpath first, then src/)
+            URL cssUrl = Main.class.getResource("/css/style.css");
+            if (cssUrl != null) {
+                scene.getStylesheets().add(cssUrl.toExternalForm());
             } else {
-                stage.getScene().setRoot(root);
+                File cssFile = new File("src/resources/css/style.css");
+                if (cssFile.exists()) {
+                    scene.getStylesheets().add(cssFile.toURI().toString());
+                }
             }
 
-            stage.setTitle("Login / Sign Up - MediMart");
+            stage.setTitle("MediMart App");
+            stage.setScene(scene);
+            stage.setMinWidth(820);
+            stage.setMinHeight(560);
+            stage.setX(b.getMinX() + (b.getWidth() - prefW) / 2);
+            stage.setY(b.getMinY() + (b.getHeight() - prefH) / 2);
             stage.show();
+
+            stage.setOnCloseRequest(e -> Platform.exit());
+
         } catch (Exception ex) {
-            ex.printStackTrace();
+            LOG.log(Level.SEVERE, "Failed to start application", ex);
+            Platform.exit();
         }
     }
 
