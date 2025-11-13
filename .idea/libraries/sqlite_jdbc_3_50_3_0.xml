@@ -1,7 +1,7 @@
 <component name="libraryTable">
-  <library name="gson-2.10.1">
+  <library name="sqlite-jdbc-3.50.3.0">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/lib/gson-2.10.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/sqlite-jdbc-3.50.3.0.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
