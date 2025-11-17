@@ -8,3 +8,7 @@
 [2025-11-13 21:36:54][INFO] SyncServer started on port 5050
 [2025-11-13 21:37:28][INFO] Updated medicine (with image) id=86
 [2025-11-13 21:37:28][WARN] broadcastRefresh failed: net.MedicineSync.broadcastRefresh()
+[2025-11-15 12:42:04][INFO] SyncServer started on port 5050
+[2025-11-15 12:42:17][INFO] SyncServer stopped.
+[2025-11-16 00:22:44][INFO] SyncServer started on port 5050
+[2025-11-16 19:26:50][INFO] SyncServer started on port 5050
