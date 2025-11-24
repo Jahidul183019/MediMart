@@ -1,0 +1,121 @@
+/* ----------------------- General Root Background ----------------------- */
+.root {
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+    -fx-background-color: #87CEFA;  /* Light Sky Blue background (Microsoft style) */
+    -fx-padding: 50px 30px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 20, 0, 0, 30); /* Soft shadow for depth */
+}
+
+/* ----------------------- Glassmorphism Pane ----------------------- */
+.glass-pane {
+    -fx-background-color: rgba(255, 255, 255, 0.25);  /* Transparent white for glassmorphism effect */
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-border-color: rgba(255, 255, 255, 0.3);
+    -fx-border-width: 2px;
+    -fx-padding: 40px 60px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 25, 0, 0, 20); /* Soft shadow */
+    -fx-alignment: center;
+}
+
+/* ----------------------- Title Label ----------------------- */
+.title-label {
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1a1a1a;  /* Dark text for the title */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5,0,0,5);
+    -fx-padding: 0 0 30px 0;
+    -fx-text-align: center;
+}
+
+/* ----------------------- Buttons ----------------------- */
+.btn-login, .btn-signup {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-background-radius: 25px;  /* Rounded corners */
+    -fx-padding: 12 30;
+    -fx-cursor: hand;
+    -fx-transition: all 0.2s ease-in-out;
+}
+
+.btn-login {
+    -fx-background-color: #0062cc;  /* Microsoft's primary blue color */
+}
+
+.btn-login:hover {
+    -fx-background-color: #0056b3; /* Darker blue on hover */
+}
+
+.btn-signup {
+    -fx-background-color: #ff8c00; /* Microsoft orange for "Create account" */
+}
+
+.btn-signup:hover {
+    -fx-background-color: #e87c00; /* Darker orange */
+}
+
+/* ----------------------- TextFields & PasswordFields ----------------------- */
+.text-field, .password-field {
+    -fx-font-size: 14px;
+    -fx-padding: 12 15;
+    -fx-background-radius: 12px;
+    -fx-border-radius: 12px;
+    -fx-border-color: #b5b5b5;
+    -fx-background-color: white;
+    -fx-text-fill: #333;
+    -fx-prompt-text-fill: #888;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 3,0,0,3); /* Soft shadow */
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+.text-field:focused, .password-field:focused {
+    -fx-border-color: #0062cc;  /* Blue focus border */
+    -fx-background-color: #f5f5f5;
+}
+
+/* ----------------------- Message Label ----------------------- */
+.message-label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #d9534f;  /* Default message color */
+    -fx-padding: 5px 0 0 0;
+    -fx-text-align: center;
+}
+
+/* ----------------------- HBox Buttons Spacing ----------------------- */
+.button-box {
+    -fx-spacing: 20;
+    -fx-alignment: center;
+}
+
+/* ----------------------- Logo ----------------------- */
+.login-logo {
+    -fx-font-size: 50px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1a1a1a;
+    -fx-text-align: center;
+    -fx-padding: 0 0 30px 0;
+}
+
+/* ----------------------- Additional Button Animation ----------------------- */
+.button:hover {
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* ----------------------- Forgot Password Button ----------------------- */
+.forgot-password-button {
+    -fx-font-size: 14px;
+    -fx-text-fill: #007BFF;  /* Blue text color */
+    -fx-background-color: transparent;
+    -fx-border: none;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-padding: 8 16;
+}
+
+.forgot-password-button:hover {
+    -fx-text-fill: #0056b3;  /* Darker blue on hover */
+}
