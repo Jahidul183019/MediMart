@@ -331,7 +331,7 @@ public class CustomerDashboard {
         Label name = new Label(safe(m.getName()));
         name.setStyle("-fx-font-size: 15px; -fx-font-weight: bold;");
 
-        Label price = new Label("Price: $" + m.getPrice());
+        Label price = new Label("Price : " + m.getPrice());
         Label expiry = new Label("Expiry: " + safe(m.getExpiryDate()));
 
         Label stock = new Label();
