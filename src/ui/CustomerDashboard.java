@@ -83,7 +83,8 @@ public class CustomerDashboard {
         this.orderService = orderService;
         this.guestMode = guestMode;
         this.medicinesData = FXCollections.observableArrayList();
-        this.cartData = FXCollections.observableArrayList();
+        // ✅ Use per-user (or guest) cart from Session instead of a fresh list
+        this.cartData = Session.getCart();
     }
 
     public void show(Stage stage) {

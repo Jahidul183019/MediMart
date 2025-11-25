@@ -1388,3 +1388,10 @@ org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no suc
 [2025-11-24 20:11:04][INFO] SyncServer started on port 5050
 [2025-11-24 20:11:17][INFO] Added medicine: Napa
 [2025-11-24 20:11:17][WARN] broadcastRefresh failed: net.MedicineSync.broadcastRefresh()
+[2025-11-24 22:28:01][INFO] SyncServer started on port 5050
+[2025-11-24 22:28:25][INFO] Added medicine: Napa
+[2025-11-24 22:28:25][WARN] broadcastRefresh failed: net.MedicineSync.broadcastRefresh()
+[2025-11-24 22:29:04][INFO] Signup success for mdjahidulislam@gmail.com
+[2025-11-24 22:58:30][INFO] SyncServer started on port 5050
+[2025-11-24 22:59:04][INFO] Added medicine: Paracetamol
+[2025-11-24 22:59:04][WARN] broadcastRefresh failed: net.MedicineSync.broadcastRefresh()

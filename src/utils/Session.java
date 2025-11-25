@@ -1,12 +1,64 @@
 package utils;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import models.OrderItem;
 import models.User;
+
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicReference;
 
 public final class Session {
     private Session() {}
 
     private static final AtomicReference<User> CURRENT = new AtomicReference<>();
+
+    // ==========================
+    //   PER-USER CART STORAGE
+    // ==========================
+
+    // All carts keyed by userId
+    private static final Map<Integer, ObservableList<OrderItem>> USER_CARTS =
+            new ConcurrentHashMap<>();
+
+    // Guest cart (when no one is logged in)
+    private static final ObservableList<OrderItem> GUEST_CART =
+            FXCollections.observableArrayList();
+
+    /**
+     * Get cart for current user.
+     * - If logged in → cart is tied to userId and reused whenever they come back.
+     * - If not logged in → use a single guest cart.
+     */
+    public static ObservableList<OrderItem> getCart() {
+        User user = CURRENT.get();
+        if (user == null) {
+            return GUEST_CART;
+        }
+        int userId = user.getId();
+        return USER_CARTS.computeIfAbsent(userId, id -> FXCollections.observableArrayList());
+    }
+
+    /**
+     * Clear only the current user's cart.
+     * Call this when the user presses "Clear cart" or removes items manually.
+     */
+    public static void clearCurrentCart() {
+        User user = CURRENT.get();
+        if (user == null) {
+            GUEST_CART.clear();
+            return;
+        }
+        ObservableList<OrderItem> cart = USER_CARTS.get(user.getId());
+        if (cart != null) {
+            cart.clear();
+        }
+    }
+
+    // ==========================
+    //   EXISTING SESSION LOGIC
+    // ==========================
 
     // Get the current logged-in user
     public static User getCurrentUser() {
@@ -45,8 +97,11 @@ public final class Session {
         }
     }
 
-    // Logout and clear the session
+    // Logout: do NOT delete the user's stored cart
+    // Cart stays mapped to userId until items are removed from cart UI.
     public static void logout() {
         CURRENT.set(null);
+        // Optional: clear guest cart when logging out
+        GUEST_CART.clear();
     }
 }
