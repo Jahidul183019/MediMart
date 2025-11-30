@@ -96,6 +96,40 @@ Reusable helpers:
 - Report exporting system  
 
 ---
+
+## 🖥️ Application Screenshots
+
+### 👤 Customer Dashboard
+<p align="center">
+  <img src="screenshots/Customer%20Dashboard.png" width="80%">
+</p>
+
+### 🛠️ Admin Dashboard
+<p align="center">
+  <img src="screenshots/Admin%20Dashboard.png" width="80%">
+</p>
+
+### 🧾 Invoice
+<p align="center">
+  <img src="screenshots/Invoice.png" width="80%">
+</p>
+
+### 🙍‍♂️ Profile View
+<p align="center">
+  <img src="screenshots/Profile%20View.png" width="80%">
+</p>
+
+### 📜 Order History
+<p align="center">
+  <img src="screenshots/Order%20History.png" width="80%">
+</p>
+
+📄 **Full Invoice PDF:**  
+👉 [Download invoice.pdf](screenshots/invoice.pdf)
+
+---
+
+
 <h1>🖼️ UML Diagrams</h1>
 
 <h3>📌 Class Diagram</h3>
