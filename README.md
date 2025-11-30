@@ -94,10 +94,31 @@ Reusable helpers:
 - Exception abstraction  
 - Image storage helper  
 - Report exporting system  
-
 ---
 
 ## 🖥️ Application Screenshots
+
+### 🔐 Admin Login
+<p align="center">
+  <img src="screenshots/Admin%20Login.png" width="80%">
+</p>
+
+### 👤 Customer Login
+<p align="center">
+  <img src="screenshots/Customer%20Login.png" width="80%">
+</p>
+
+### 📝 Signup Form
+<p align="center">
+  <img src="screenshots/Signup.png" width="80%">
+</p>
+
+### 🧪 Add Medicine Form
+<p align="center">
+  <img src="screenshots/Add%20Medicine%20Form.png" width="80%">
+</p>
+
+---
 
 ### 👤 Customer Dashboard
 <p align="center">
@@ -109,11 +130,6 @@ Reusable helpers:
   <img src="screenshots/Admin%20Dashboard.png" width="80%">
 </p>
 
-### 🧾 Invoice
-<p align="center">
-  <img src="screenshots/Invoice.png" width="80%">
-</p>
-
 ### 🙍‍♂️ Profile View
 <p align="center">
   <img src="screenshots/Profile%20View.png" width="80%">
@@ -122,6 +138,11 @@ Reusable helpers:
 ### 📜 Order History
 <p align="center">
   <img src="screenshots/Order%20History.png" width="80%">
+</p>
+
+### 🧾 Invoice
+<p align="center">
+  <img src="screenshots/Invoice.png" width="80%">
 </p>
 
 📄 **Full Invoice PDF:**  
