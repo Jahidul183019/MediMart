@@ -93,11 +93,16 @@ Reusable helpers:
 - Error logging  
 - Exception abstraction  
 - Image storage helper  
-- Report exporting system  
+- Report exporting system
 
 ---
 
 ## 🖥️ Application Screenshots
+
+### 🏠 Home View
+<p align="center">
+  <img src="screenshots/Home.png" width="80%">
+</p>
 
 ### 🔐 Admin Login
 <p align="center">
@@ -146,13 +151,13 @@ Reusable helpers:
   <img src="screenshots/Order%20History.png" width="80%">
 </p>
 
-### 🧾 Invoice
+### 🧾 Invoice Preview
 <p align="center">
   <img src="screenshots/Invoice.png" width="80%">
 </p>
 
-📄 **Full Invoice PDF:**  
-👉 [Download invoice.pdf](screenshots/invoice.pdf)
+📄 **Full Invoice PDF**  
+[Download invoice.pdf](screenshots/invoice.pdf)
 
 ---
 
