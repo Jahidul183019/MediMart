@@ -116,7 +116,8 @@ Reusable helpers:
 <h3>📌 Activity Diagram (Order Process Flow)</h3>
 <p align="center">
   <img src="UML Diagrams/Activity Diagram.png" width="60%">
-</p> use css masking on this 
+</p>
+
 # ⬇️ How to Clone
 
 ```bash
