@@ -94,6 +94,7 @@ Reusable helpers:
 - Exception abstraction  
 - Image storage helper  
 - Report exporting system  
+
 ---
 
 ## 🖥️ Application Screenshots
@@ -116,6 +117,11 @@ Reusable helpers:
 ### 🧪 Add Medicine Form
 <p align="center">
   <img src="screenshots/Add%20Medicine%20Form.png" width="80%">
+</p>
+
+### 💳 Card Payment View
+<p align="center">
+  <img src="screenshots/Card%20View.png" width="80%">
 </p>
 
 ---
@@ -149,7 +155,6 @@ Reusable helpers:
 👉 [Download invoice.pdf](screenshots/invoice.pdf)
 
 ---
-
 
 <h1>🖼️ UML Diagrams</h1>
 
