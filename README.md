@@ -108,6 +108,16 @@ Reusable helpers:
   <img src="screenshots/Admin%20Login.png" width="80%">
 </p>
 
+### Admin Dashboard
+<p align="center">
+  <img src="screenshots/Admin%20Dashboard.png" width="80%">
+</p>
+
+### Add Medicine Form
+<p align="center">
+  <img src="screenshots/Add%20Medicine%20Form.png" width="80%">
+</p>
+
 ### Customer Login
 <p align="center">
   <img src="screenshots/Customer%20Login.png" width="80%">
@@ -118,9 +128,9 @@ Reusable helpers:
   <img src="screenshots/Signup.png" width="80%">
 </p>
 
-### Add Medicine Form
+### Customer Dashboard
 <p align="center">
-  <img src="screenshots/Add%20Medicine%20Form.png" width="80%">
+  <img src="screenshots/Customer%20Dashboard.png" width="80%">
 </p>
 
 ### Cart View
@@ -131,18 +141,6 @@ Reusable helpers:
 ### Card Payment View
 <p align="center">
   <img src="screenshots/Card%20Payment%20View.png" width="80%">
-</p>
-
----
-
-### Customer Dashboard
-<p align="center">
-  <img src="screenshots/Customer%20Dashboard.png" width="80%">
-</p>
-
-### Admin Dashboard
-<p align="center">
-  <img src="screenshots/Admin%20Dashboard.png" width="80%">
 </p>
 
 ### Profile View
