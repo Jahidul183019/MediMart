@@ -96,62 +96,66 @@ Reusable helpers:
 - Report exporting system
 
 ---
-
 ## 🖥️ Application Screenshots
 
-### 🏠 Home View
+### Home View
 <p align="center">
   <img src="screenshots/Home.png" width="80%">
 </p>
 
-### 🔐 Admin Login
+### Admin Login
 <p align="center">
   <img src="screenshots/Admin%20Login.png" width="80%">
 </p>
 
-### 👤 Customer Login
+### Customer Login
 <p align="center">
   <img src="screenshots/Customer%20Login.png" width="80%">
 </p>
 
-### 📝 Signup Form
+### Signup Form
 <p align="center">
   <img src="screenshots/Signup.png" width="80%">
 </p>
 
-### 🧪 Add Medicine Form
+### Add Medicine Form
 <p align="center">
   <img src="screenshots/Add%20Medicine%20Form.png" width="80%">
 </p>
 
-### 💳 Card Payment View
+### Cart View
+<p align="center">
+  <img src="screenshots/Cart%20View.png" width="80%">
+</p>
+
+### Card Payment View
 <p align="center">
   <img src="screenshots/Card%20View.png" width="80%">
 </p>
 
 ---
 
-### 👤 Customer Dashboard
+### Customer Dashboard
 <p align="center">
   <img src="screenshots/Customer%20Dashboard.png" width="80%">
 </p>
 
-### 🛠️ Admin Dashboard
+### Admin Dashboard
 <p align="center">
   <img src="screenshots/Admin%20Dashboard.png" width="80%">
 </p>
 
-### 🙍‍♂️ Profile View
+### Profile View
 <p align="center">
   <img src="screenshots/Profile%20View.png" width="80%">
 </p>
 
-### 📜 Order History
+### Order History
 <p align="center">
   <img src="screenshots/Order%20History.png" width="80%">
 </p>
 
-### 🧾 Invoice Preview
+### Invoice Preview
 <p align="center">
   <img src="screenshots/Invoice.png" width="80%">
 </p>
