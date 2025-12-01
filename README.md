@@ -130,7 +130,7 @@ Reusable helpers:
 
 ### Card Payment View
 <p align="center">
-  <img src="screenshots/Card%20View.png" width="80%">
+  <img src="screenshots/Card%20Payment%20View.png" width="80%">
 </p>
 
 ---
