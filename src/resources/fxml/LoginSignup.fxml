@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="ui.LoginSignup"
+            prefWidth="500" prefHeight="600"
+            styleClass="root">
+
+    <children>
+        <!-- Apply the background image here -->
+        <VBox alignment="CENTER" spacing="20"
+              AnchorPane.topAnchor="50" AnchorPane.bottomAnchor="50"
+              AnchorPane.leftAnchor="50" AnchorPane.rightAnchor="50"
+              styleClass="glass-pane"
+              style="-fx-background-image: url('file:src/resources/images/login_background.png');
+                     -fx-background-size: cover;
+                     -fx-background-position: center center;">
+
+            <!-- Back Button -->
+            <Button fx:id="backBtn" text="← Back"
+                    style="-fx-background-color: linear-gradient(to right, #f44336, #d32f2f);
+                           -fx-text-fill: white; -fx-font-weight: bold;
+                           -fx-background-radius: 20; -fx-padding: 8 18; -fx-cursor: hand;"/>
+
+            <!-- Email and Password Fields -->
+            <TextField fx:id="emailField" promptText="Email" styleClass="text-field"/>
+            <StackPane>
+                <PasswordField fx:id="passwordField" promptText="Password" styleClass="password-field"/>
+                <TextField fx:id="passwordTextField" promptText="Password"
+                           styleClass="password-field"
+                           visible="false" managed="false"/>
+            </StackPane>
+
+            <HBox alignment="CENTER_LEFT">
+                <CheckBox fx:id="showPasswordCheck" text="Show password"/>
+            </HBox>
+
+            <!-- Login and Signup Buttons -->
+            <HBox alignment="CENTER" spacing="20">
+                <Button fx:id="loginBtn" text="Login" styleClass="btn-login"/>
+                <Button fx:id="signupBtn" text="Sign Up" styleClass="btn-signup"/>
+            </HBox>
+
+            <!-- Forgot Password Button -->
+            <Button fx:id="forgotPasswordBtn" text="Forgot Password?" styleClass="forgot-password-button"/>
+
+            <!-- Message Label -->
+            <Label fx:id="messageLabel" styleClass="message-label"/>
+        </VBox>
+    </children>
+</AnchorPane>

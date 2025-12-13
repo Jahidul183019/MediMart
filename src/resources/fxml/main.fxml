@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Circle?>
+
+<StackPane fx:id="root"
+           xmlns="http://javafx.com/javafx/25"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="ui.MainController"
+           prefWidth="1280.0" prefHeight="800.0"
+           style="-fx-background-color: linear-gradient(to bottom right,#B2EBF2,#C8E6C9);">
+
+    <children>
+
+        <!-- Background slideshow : p1..p4 from MainController -->
+        <ImageView fx:id="bgView"
+                   preserveRatio="false"
+                   fitWidth="1280.0" fitHeight="800.0"
+                   mouseTransparent="true"/>
+
+        <!-- Dark overlay for better contrast -->
+        <StackPane mouseTransparent="true"
+                   style="-fx-background-color: linear-gradient(to bottom, rgba(0,0,0,0.08), rgba(0,0,0,0.20));"/>
+
+        <!-- Floating orbs -->
+        <Pane maxWidth="Infinity" maxHeight="Infinity" mouseTransparent="true">
+            <children>
+                <Circle fx:id="orbA" radius="280.0" layoutX="180.0" layoutY="160.0" fill="#72E6D955"/>
+                <Circle fx:id="orbB" radius="360.0" layoutX="1100.0" layoutY="200.0" fill="#7CC0FF44"/>
+                <Circle fx:id="orbC" radius="280.0" layoutX="350.0" layoutY="640.0" fill="#FFE08244"/>
+            </children>
+        </Pane>
+
+        <!-- Scrollable page content -->
+        <ScrollPane fx:id="pageScroll"
+                    fitToWidth="true"
+                    hbarPolicy="NEVER"
+                    vbarPolicy="AS_NEEDED"
+                    style="-fx-background-color: transparent;">
+            <content>
+
+                <VBox spacing="40.0" alignment="TOP_CENTER" fillWidth="true">
+
+                    <!-- HERO SECTION -->
+                    <StackPane maxWidth="1200.0">
+                        <padding>
+                            <Insets top="32.0" right="32.0" bottom="16.0" left="32.0"/>
+                        </padding>
+                        <children>
+
+                            <!-- Glass card -->
+                            <StackPane fx:id="heroCard"
+                                       style="-fx-background-color: rgba(255,255,255,0.18);
+                                              -fx-background-radius: 32;
+                                              -fx-border-radius: 32;
+                                              -fx-border-color: rgba(255,255,255,0.55);
+                                              -fx-border-width: 1.5;
+                                              -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.35), 30, 0.25, 0, 10);">
+                                <padding>
+                                    <Insets top="32.0" right="40.0" bottom="32.0" left="40.0"/>
+                                </padding>
+
+                                <VBox spacing="20.0" alignment="CENTER" maxWidth="1000.0">
+
+                                    <!-- Logo (image set in controller to logo_medimart.png) -->
+                                    <ImageView fx:id="logoView"
+                                               fitHeight="120.0"
+                                               preserveRatio="true"
+                                               smooth="true"/>
+
+                                    <Label text="Your Trusted Online Pharmacy"
+                                           style="-fx-font-size:40px;
+                                                  -fx-font-weight:800;
+                                                  -fx-text-fill:#FDFDFD;
+                                                  -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.45), 10, 0.3, 0, 3);"/>
+
+                                    <Label text="Search medicines, explore categories, and enjoy fast, secure delivery to your doorstep."
+                                           wrapText="true"
+                                           maxWidth="680.0"
+                                           style="-fx-font-size:15px;
+                                                  -fx-text-fill:#F0F4F8CC;
+                                                  -fx-alignment:center;"/>
+
+                                    <!-- Search Row -->
+                                    <HBox spacing="10.0" alignment="CENTER">
+                                        <TextField fx:id="globalSearch"
+                                                   promptText="Search medicine or brand"
+                                                   prefWidth="620.0"
+                                                   style="-fx-background-color: rgba(255,255,255,0.96);
+                                                          -fx-background-radius:999;
+                                                          -fx-padding:12 18;
+                                                          -fx-font-size:14px;
+                                                          -fx-text-fill:#102A43;"/>
+                                        <Button fx:id="searchBtn"
+                                                text="Search"
+                                                style="-fx-background-color: linear-gradient(to right,#009688,#26C6DA);
+                                                       -fx-text-fill:white;
+                                                       -fx-font-weight:bold;
+                                                       -fx-background-radius:999;
+                                                       -fx-padding:12 26;
+                                                       -fx-effect:dropshadow(gaussian, rgba(0,0,0,0.30), 12, 0.3, 0, 4);">
+                                        </Button>
+                                    </HBox>
+
+                                    <!-- CTA Buttons with icons -->
+                                    <HBox spacing="16.0" alignment="CENTER">
+
+                                        <!-- Admin button with admin.png -->
+                                        <Button fx:id="adminBtn"
+                                                text="Login as Admin"
+                                                style="-fx-background-color: linear-gradient(to right,#00796B,#00897B);
+                                                       -fx-text-fill:white;
+                                                       -fx-font-weight:bold;
+                                                       -fx-background-radius:999;
+                                                       -fx-padding:11 24;
+                                                       -fx-effect:dropshadow(gaussian, rgba(0,0,0,0.28), 10, 0.3, 0, 3);">
+                                            <graphic>
+                                                <ImageView fitHeight="20.0" preserveRatio="true" smooth="true">
+                                                    <image>
+                                                        <!-- admin.png -->
+                                                        <Image url="@/resources/images/admin.png"/>
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+
+                                        <!-- Customer button with customer.png -->
+                                        <Button fx:id="customerBtn"
+                                                text="Login / Sign Up"
+                                                style="-fx-background-color: linear-gradient(to right,#F9A825,#FFB300);
+                                                       -fx-text-fill:#1F1300;
+                                                       -fx-font-weight:bold;
+                                                       -fx-background-radius:999;
+                                                       -fx-padding:11 24;
+                                                       -fx-effect:dropshadow(gaussian, rgba(0,0,0,0.28), 10, 0.3, 0, 3);">
+                                            <graphic>
+                                                <ImageView fitHeight="20.0" preserveRatio="true" smooth="true">
+                                                    <image>
+                                                        <!-- customer.png -->
+                                                        <Image url="@/resources/images/customer.png"/>
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+
+                                    </HBox>
+
+                                    <!-- Tiny helper text -->
+                                    <Label text="Admins manage inventory &amp; orders • Customers browse and place secure orders"
+                                           style="-fx-font-size:11px; -fx-text-fill:#E0F7FAAA;"/>
+
+                                </VBox>
+                            </StackPane>
+
+                        </children>
+                    </StackPane>
+
+                    <!-- CATEGORY CHIPS -->
+                    <VBox maxWidth="1200.0" spacing="14.0" alignment="CENTER">
+                        <padding>
+                            <Insets top="4.0" right="32.0" bottom="0.0" left="32.0"/>
+                        </padding>
+                        <Label text="Shop by Category"
+                               style="-fx-font-size:24px;
+                                      -fx-font-weight:900;
+                                      -fx-text-fill:#FDFDFD;
+                                      -fx-effect:dropshadow(gaussian, rgba(0,0,0,0.45), 8, 0.25, 0, 2);"/>
+                        <FlowPane fx:id="categoryFlow"
+                                  hgap="12.0" vgap="12.0"
+                                  prefWrapLength="1100.0"
+                                  alignment="CENTER"/>
+                    </VBox>
+
+                    <!-- FEATURES ROW (with icons: support.png, fast.png, genuine.png) -->
+                    <HBox maxWidth="1200.0" spacing="18.0" alignment="CENTER">
+                        <padding>
+                            <Insets top="4.0" right="32.0" bottom="0.0" left="32.0"/>
+                        </padding>
+
+                        <!-- 24/7 Support - support.png -->
+                        <Pane HBox.hgrow="ALWAYS"
+                              style="-fx-background-color: rgba(255,255,255,0.96);
+                                     -fx-background-radius: 20;
+                                     -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.18), 20, 0.35, 0, 8);">
+                            <padding>
+                                <Insets top="18.0" right="18.0" bottom="18.0" left="18.0"/>
+                            </padding>
+                            <VBox alignment="CENTER" spacing="8.0">
+
+                                <ImageView fitHeight="38.0" preserveRatio="true" smooth="true">
+                                    <image>
+                                        <!-- support.png -->
+                                        <Image url="@/resources/images/support.png"/>
+                                    </image>
+                                </ImageView>
+
+                                <Label text="24/7 Support"
+                                       style="-fx-font-weight:bold; -fx-text-fill:#102A43;"/>
+                                <Label text="Chat with us anytime"
+                                       wrapText="true"
+                                       maxWidth="160.0"
+                                       style="-fx-text-fill:#627D98; -fx-font-size:12px;"/>
+                            </VBox>
+                        </Pane>
+
+                        <!-- Fast Delivery - fast.png -->
+                        <Pane HBox.hgrow="ALWAYS"
+                              style="-fx-background-color: rgba(255,255,255,0.96);
+                                     -fx-background-radius: 20;
+                                     -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.18), 20, 0.35, 0, 8);">
+                            <padding>
+                                <Insets top="18.0" right="18.0" bottom="18.0" left="18.0"/>
+                            </padding>
+                            <VBox alignment="CENTER" spacing="8.0">
+
+                                <ImageView fitHeight="38.0" preserveRatio="true" smooth="true">
+                                    <image>
+                                        <!-- fast.png -->
+                                        <Image url="@/resources/images/fast.png"/>
+                                    </image>
+                                </ImageView>
+
+                                <Label text="Fast Delivery"
+                                       style="-fx-font-weight:bold; -fx-text-fill:#102A43;"/>
+                                <Label text="Same-day in select areas"
+                                       wrapText="true"
+                                       maxWidth="160.0"
+                                       style="-fx-text-fill:#627D98; -fx-font-size:12px;"/>
+                            </VBox>
+                        </Pane>
+
+                        <!-- Genuine Medicines - genuine.png -->
+                        <Pane HBox.hgrow="ALWAYS"
+                              style="-fx-background-color: rgba(255,255,255,0.96);
+                                     -fx-background-radius: 20;
+                                     -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.18), 20, 0.35, 0, 8);">
+                            <padding>
+                                <Insets top="18.0" right="18.0" bottom="18.0" left="18.0"/>
+                            </padding>
+                            <VBox alignment="CENTER" spacing="8.0">
+
+                                <ImageView fitHeight="38.0" preserveRatio="true" smooth="true">
+                                    <image>
+                                        <!-- genuine.png -->
+                                        <Image url="@/resources/images/genuine.png"/>
+                                    </image>
+                                </ImageView>
+
+                                <Label text="Genuine Medicines"
+                                       style="-fx-font-weight:bold; -fx-text-fill:#102A43;"/>
+                                <Label text="Sourced from trusted partners"
+                                       wrapText="true"
+                                       maxWidth="180.0"
+                                       style="-fx-text-fill:#627D98; -fx-font-size:12px;"/>
+                            </VBox>
+                        </Pane>
+
+                    </HBox>
+
+                    <!-- FOOTER -->
+                    <VBox alignment="CENTER" spacing="6.0">
+                        <padding>
+                            <Insets bottom="28.0"/>
+                        </padding>
+                        <Label text="© MediMart — All rights reserved"
+                               style="-fx-text-fill:#E0F2F1CC; -fx-font-size:11px;"/>
+                    </VBox>
+
+                </VBox>
+            </content>
+        </ScrollPane>
+
+    </children>
+</StackPane>
