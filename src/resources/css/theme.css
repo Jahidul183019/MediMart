@@ -1,0 +1,72 @@
+/* -----------------------------------------------------
+   🌈 UNIVERSAL BUTTON BASE (Glow + Lift + Smooth Motion)
+   ----------------------------------------------------- */
+
+.button {
+    -fx-background-radius: 999px;
+    -fx-font-size: 14px;
+    -fx-font-weight: 700;
+    -fx-padding: 10 22;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+    -fx-border-radius: 999px;
+    -fx-background-insets: 0;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.20), 12, 0.2, 0, 3);
+    -fx-opacity: 0.95;
+    -fx-transition: 0.25s;
+}
+
+.button:hover {
+    -fx-opacity: 1.0;
+    -fx-translate-y: -2;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.35), 14, 0.3, 0, 4);
+}
+
+.button:pressed {
+    -fx-translate-y: 0;
+    -fx-effect: none;
+}
+
+/* -----------------------------------------------------
+   🔵 PRIMARY BUTTON — AQUA BLUE GRADIENT
+   ----------------------------------------------------- */
+.primary-button {
+    -fx-background-color: linear-gradient(to right, #00c6ff, #0072ff);
+}
+
+/* -----------------------------------------------------
+   🔴 DANGER BUTTON — MAGENTA TO RED
+   ----------------------------------------------------- */
+.danger-button {
+    -fx-background-color: linear-gradient(to right, #ff512f, #dd2476);
+}
+
+/* -----------------------------------------------------
+   🟠 WARNING BUTTON — SUNSET ORANGE
+   ----------------------------------------------------- */
+.warning-button {
+    -fx-background-color: linear-gradient(to right, #f7971e, #ffd200);
+}
+
+/* -----------------------------------------------------
+   🟣 INFO BUTTON (Optional)
+   ----------------------------------------------------- */
+.info-button {
+    -fx-background-color: linear-gradient(to right, #8e2de2, #4a00e0);
+}
+
+/* -----------------------------------------------------
+   🟢 SUCCESS BUTTON — EMERALD GREEN
+   ----------------------------------------------------- */
+.success-button {
+    -fx-background-color: linear-gradient(to right, #56ab2f, #a8e063);
+    -fx-text-fill: #ffffff;
+}
+
+/* -----------------------------------------------------
+   ⚪ SECONDARY BUTTON — SILVER MODERN
+   ----------------------------------------------------- */
+.secondary-button {
+    -fx-background-color: linear-gradient(to right, #757f9a, #d7dde8);
+    -fx-text-fill: #ffffff;
+}

@@ -1,0 +1,1803 @@
+[2025-11-11 22:53:34][INFO] SyncServer started on port 5050
+[2025-11-11 22:54:18][INFO] Updated medicine (with image) id=1
+[2025-11-11 22:54:18][WARN] broadcastRefresh failed: net.MedicineSync.broadcastRefresh()
+[2025-11-12 13:47:35][INFO] SyncServer started on port 5050
+[2025-11-12 13:52:50][INFO] SyncServer stopped.
+[2025-11-13 19:53:25][INFO] SyncServer started on port 5050
+[2025-11-13 19:53:31][INFO] SyncServer stopped.
+[2025-11-13 21:36:54][INFO] SyncServer started on port 5050
+[2025-11-13 21:37:28][INFO] Updated medicine (with image) id=86
+[2025-11-13 21:37:28][WARN] broadcastRefresh failed: net.MedicineSync.broadcastRefresh()
+[2025-11-16 19:00:57][INFO] Signup success for ss@gmail.com
+[2025-11-19 08:18:39][INFO] SyncServer started on port 5050
+[2025-11-19 08:49:01][INFO] SyncServer started on port 5050
+[2025-11-19 08:51:13][INFO] Added medicine: Gaja
+[2025-11-19 08:51:13][WARN] broadcastRefresh failed: net.MedicineSync.broadcastRefresh()
+[2025-11-19 08:52:31][INFO] Deleted medicine id=101
+[2025-11-19 08:52:31][WARN] broadcastRefresh failed: net.MedicineSync.broadcastRefresh()
+[2025-11-19 08:52:31][ERROR] DB error in getAllMedicines: stmt pointer is closed
+java.sql.SQLException: stmt pointer is closed
+	at org.sqlite.core.SafeStmtPtr.ensureOpen(SafeStmtPtr.java:148)
+	at org.sqlite.core.SafeStmtPtr.safeRunInt(SafeStmtPtr.java:83)
+	at org.sqlite.jdbc3.JDBC3ResultSet.safeGetColumnType(JDBC3ResultSet.java:966)
+	at org.sqlite.jdbc3.JDBC3ResultSet.getDouble(JDBC3ResultSet.java:305)
+	at org.sqlite.jdbc3.JDBC3ResultSet.getDouble(JDBC3ResultSet.java:313)
+	at services.MedicineService.getAllMedicines(MedicineService.java:64)
+	at ui.AdminDashboard.lambda$asyncRefresh$0(AdminDashboard.java:357)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+
+[2025-11-19 08:52:31][WARN] DB read failed; served data from snapshot.
+[2025-11-19 09:39:39][INFO] SyncServer started on port 5050
+[2025-11-19 09:42:50][INFO] SyncServer started on port 5050
+[2025-11-19 11:42:50][INFO] SyncServer started on port 5050
+[2025-11-19 13:34:54][INFO] SyncServer started on port 5050
+[2025-11-19 13:37:48][INFO] SyncServer started on port 5050
+[2025-11-19 20:05:48][INFO] SyncServer started on port 5050
+[2025-11-19 20:06:06][INFO] Updated medicine (with image) id=12
+[2025-11-19 20:06:06][WARN] broadcastRefresh failed: net.MedicineSync.broadcastRefresh()
+[2025-11-19 20:06:57][INFO] SyncServer stopped.
+[2025-11-19 20:09:24][INFO] SyncServer started on port 5050
+[2025-11-19 20:09:47][INFO] SyncServer stopped.
+[2025-11-19 20:10:29][INFO] SyncServer started on port 5050
+[2025-11-19 20:41:55][INFO] SyncServer started on port 5050
+[2025-11-19 20:41:55][INFO] Client connected: /127.0.0.1:59877
+[2025-11-19 20:41:55][INFO] Connected to SyncServer 127.0.0.1:5050
+[2025-11-19 20:41:56][INFO] Client connected: /127.0.0.1:59878
+[2025-11-19 20:41:56][INFO] Connected to SyncServer 127.0.0.1:5050
+[2025-11-19 20:42:21][INFO] Refreshing data...
+[2025-11-19 20:42:21][INFO] Refreshing data...
+[2025-11-19 20:42:26][INFO] Refreshing data...
+[2025-11-19 20:42:26][INFO] Refreshing data...
+[2025-11-19 20:42:29][INFO] SyncServer stopped.
+[2025-11-19 20:52:44][INFO] SyncServer started on port 5050
+[2025-11-19 20:52:44][INFO] Client connected: /127.0.0.1:60018
+[2025-11-19 20:52:44][INFO] Connected to SyncServer 127.0.0.1:5050
+[2025-11-19 20:52:45][INFO] Connected to SyncServer 127.0.0.1:5050
+[2025-11-19 20:52:45][INFO] Client connected: /127.0.0.1:60019
+[2025-11-19 20:52:47][INFO] SyncServer stopped.
+[2025-11-19 20:53:03][INFO] SyncServer started on port 5050
+[2025-11-19 20:53:03][INFO] Client connected: /127.0.0.1:60025
+[2025-11-19 20:53:03][INFO] Connected to SyncServer 127.0.0.1:5050
+[2025-11-19 20:53:03][INFO] Connected to SyncServer 127.0.0.1:5050
+[2025-11-19 20:53:03][INFO] Client connected: /127.0.0.1:60026
+[2025-11-19 20:53:06][INFO] SyncServer stopped.
+[2025-11-19 20:53:11][INFO] SyncServer started on port 5050
+[2025-11-19 20:53:11][INFO] Client connected: /127.0.0.1:60033
+[2025-11-19 20:53:11][INFO] Connected to SyncServer 127.0.0.1:5050
+[2025-11-19 20:53:12][INFO] Connected to SyncServer 127.0.0.1:5050
+[2025-11-19 20:53:12][INFO] Client connected: /127.0.0.1:60034
+[2025-11-19 20:53:15][INFO] SyncServer stopped.
+[2025-11-19 20:53:19][INFO] SyncServer started on port 5050
+[2025-11-19 20:53:19][INFO] Client connected: /127.0.0.1:60038
+[2025-11-19 20:53:19][INFO] Connected to SyncServer 127.0.0.1:5050
+[2025-11-19 20:53:19][INFO] Connected to SyncServer 127.0.0.1:5050
+[2025-11-19 20:53:19][INFO] Client connected: /127.0.0.1:60039
+[2025-11-19 20:53:24][INFO] Connected to SyncServer 127.0.0.1:5050
+[2025-11-19 20:53:24][INFO] Client connected: /127.0.0.1:60040
+[2025-11-19 20:53:24][INFO] Connected to SyncServer 127.0.0.1:5050
+[2025-11-19 20:53:24][INFO] Client connected: /127.0.0.1:60041
+[2025-11-19 20:53:26][INFO] Connected to SyncServer 127.0.0.1:5050
+[2025-11-19 20:53:26][INFO] Client connected: /127.0.0.1:60043
+[2025-11-19 20:53:26][INFO] Connected to SyncServer 127.0.0.1:5050
+[2025-11-19 20:53:26][INFO] Client connected: /127.0.0.1:60045
+[2025-11-19 20:53:29][INFO] Client connected: /127.0.0.1:60046
+[2025-11-19 20:53:29][INFO] Connected to SyncServer 127.0.0.1:5050
+[2025-11-19 20:53:29][INFO] Connected to SyncServer 127.0.0.1:5050
+[2025-11-19 20:53:29][INFO] Client connected: /127.0.0.1:60047
+[2025-11-19 20:53:31][INFO] SyncServer stopped.
+[2025-11-19 20:55:07][INFO] SyncServer started on port 5050
+[2025-11-19 20:55:07][INFO] Client connected: /127.0.0.1:60056
+[2025-11-19 20:55:07][INFO] Connected to SyncServer 127.0.0.1:5050
+[2025-11-19 20:55:07][INFO] Connected to SyncServer 127.0.0.1:5050
+[2025-11-19 20:55:07][INFO] Client connected: /127.0.0.1:60057
+[2025-11-19 20:55:09][INFO] Connected to SyncServer 127.0.0.1:5050
+[2025-11-19 20:55:09][INFO] Client connected: /127.0.0.1:60058
+[2025-11-19 20:55:10][INFO] Connected to SyncServer 127.0.0.1:5050
+[2025-11-19 20:55:10][INFO] Client connected: /127.0.0.1:60059
+[2025-11-19 20:55:11][INFO] SyncServer stopped.
+[2025-11-19 20:55:57][INFO] SyncServer started on port 5050
+[2025-11-19 20:56:01][INFO] SyncServer stopped.
+[2025-11-19 21:03:39][INFO] SyncServer started on port 5050
+[2025-11-19 21:03:44][INFO] SyncServer stopped.
+[2025-11-19 21:05:38][INFO] SyncServer started on port 5050
+[2025-11-19 21:05:40][INFO] SyncServer stopped.
+[2025-11-19 21:18:23][INFO] SyncServer started on port 5050
+[2025-11-19 21:18:23][INFO] Client connected: /172.16.98.1:60217
+[2025-11-19 21:18:23][INFO] Connected to SyncServer 172.16.98.1:5050
+[2025-11-19 21:18:23][INFO] Client connected: /172.16.98.1:60218
+[2025-11-19 21:18:23][INFO] Connected to SyncServer 172.16.98.1:5050
+[2025-11-19 21:18:25][INFO] Connected to SyncServer 172.16.98.1:5050
+[2025-11-19 21:18:25][INFO] Client connected: /172.16.98.1:60219
+[2025-11-19 21:18:26][INFO] Connected to SyncServer 172.16.98.1:5050
+[2025-11-19 21:18:26][INFO] Client connected: /172.16.98.1:60220
+[2025-11-19 21:18:27][INFO] SyncServer stopped.
+[2025-11-19 21:29:40][INFO] SyncServer started on port 5050
+[2025-11-19 21:30:10][INFO] Client connected: /127.0.0.1:60467
+[2025-11-19 21:30:55][WARN] SyncClient reconnecting in 2s: Operation timed out
+[2025-11-19 21:30:55][WARN] SyncClient reconnecting in 2s: Operation timed out
+[2025-11-19 21:31:39][INFO] Client disconnected: /127.0.0.1:60467
+[2025-11-19 21:53:29][INFO] SyncServer started on port 5050
+[2025-11-19 21:53:33][INFO] SyncServer stopped.
+[2025-11-19 21:55:07][INFO] SyncServer started on port 5050
+[2025-11-19 21:55:12][WARN] SyncClient reconnecting in 2s: Host is down
+[2025-11-19 21:55:13][WARN] SyncClient reconnecting in 2s: Host is down
+[2025-11-19 21:55:14][INFO] SyncServer stopped.
+[2025-11-20 11:32:06][INFO] SyncServer started on port 5050
+[2025-11-20 11:33:21][WARN] SyncClient reconnecting in 2s: Operation timed out
+[2025-11-20 11:33:21][WARN] SyncClient reconnecting in 2s: Operation timed out
+[2025-11-20 11:34:35][WARN] SyncClient reconnecting in 2s: Operation timed out
+[2025-11-20 11:34:35][WARN] SyncClient reconnecting in 2s: Operation timed out
+[2025-11-20 11:34:38][WARN] SyncClient reconnecting in 2s: Operation timed out
+[2025-11-20 11:34:38][WARN] SyncClient reconnecting in 2s: Operation timed out
+[2025-11-20 11:35:52][WARN] SyncClient reconnecting in 2s: Operation timed out
+[2025-11-20 11:35:52][WARN] SyncClient reconnecting in 2s: Operation timed out
+[2025-11-20 11:35:55][WARN] SyncClient reconnecting in 2s: Operation timed out
+[2025-11-20 11:35:55][WARN] SyncClient reconnecting in 2s: Operation timed out
+[2025-11-20 11:36:06][WARN] SyncClient reconnecting in 2s: Operation timed out
+[2025-11-20 11:36:06][WARN] SyncClient reconnecting in 2s: Operation timed out
+[2025-11-20 11:37:07][INFO] Added medicine: Napa One
+[2025-11-20 11:37:07][WARN] broadcastRefresh failed: net.MedicineSync.broadcastRefresh()
+[2025-11-20 11:37:09][WARN] SyncClient reconnecting in 2s: Operation timed out
+[2025-11-20 11:37:09][WARN] SyncClient reconnecting in 2s: Operation timed out
+[2025-11-20 11:37:12][WARN] SyncClient reconnecting in 2s: Operation timed out
+[2025-11-20 11:37:12][WARN] SyncClient reconnecting in 2s: Operation timed out
+[2025-11-20 11:37:23][WARN] SyncClient reconnecting in 2s: Operation timed out
+[2025-11-20 11:37:23][WARN] SyncClient reconnecting in 2s: Operation timed out
+[2025-11-20 11:38:26][WARN] SyncClient reconnecting in 2s: Operation timed out
+[2025-11-20 11:38:26][WARN] SyncClient reconnecting in 2s: Operation timed out
+[2025-11-20 11:38:29][WARN] SyncClient reconnecting in 2s: Operation timed out
+[2025-11-20 11:38:29][WARN] SyncClient reconnecting in 2s: Operation timed out
+[2025-11-20 11:38:40][WARN] SyncClient reconnecting in 2s: Operation timed out
+[2025-11-20 11:38:40][WARN] SyncClient reconnecting in 2s: Operation timed out
+[2025-11-20 11:38:54][WARN] SyncClient reconnecting in 2s: Operation timed out
+[2025-11-20 11:38:54][WARN] SyncClient reconnecting in 2s: Operation timed out
+[2025-11-20 11:39:43][WARN] SyncClient reconnecting in 2s: Operation timed out
+[2025-11-20 11:39:43][WARN] SyncClient reconnecting in 2s: Operation timed out
+[2025-11-20 11:39:46][WARN] SyncClient reconnecting in 2s: Operation timed out
+[2025-11-20 11:39:46][WARN] SyncClient reconnecting in 2s: Operation timed out
+[2025-11-20 11:39:57][WARN] SyncClient reconnecting in 2s: Operation timed out
+[2025-11-20 11:39:57][WARN] SyncClient reconnecting in 2s: Operation timed out
+[2025-11-20 11:40:11][WARN] SyncClient reconnecting in 2s: Operation timed out
+[2025-11-20 11:40:11][WARN] SyncClient reconnecting in 2s: Operation timed out
+[2025-11-20 11:40:45][WARN] SyncClient reconnecting in 2s: Operation timed out
+[2025-11-20 11:40:45][WARN] SyncClient reconnecting in 2s: Operation timed out
+[2025-11-20 11:41:00][WARN] SyncClient reconnecting in 2s: Operation timed out
+[2025-11-20 11:41:00][WARN] SyncClient reconnecting in 2s: Operation timed out
+[2025-11-20 11:41:03][WARN] SyncClient reconnecting in 2s: Operation timed out
+[2025-11-20 11:41:03][WARN] SyncClient reconnecting in 2s: Operation timed out
+[2025-11-20 11:41:08][WARN] SyncClient reconnecting in 2s: Operation timed out
+[2025-11-20 11:41:08][WARN] SyncClient reconnecting in 2s: Operation timed out
+[2025-11-20 11:41:14][WARN] SyncClient reconnecting in 2s: Operation timed out
+[2025-11-20 11:41:14][WARN] SyncClient reconnecting in 2s: Operation timed out
+[2025-11-20 11:41:19][INFO] Deleted medicine id=102
+[2025-11-20 11:41:19][WARN] broadcastRefresh failed: net.MedicineSync.broadcastRefresh()
+[2025-11-20 11:41:19][ERROR] DB error in getAllMedicines: stmt pointer is closed
+java.sql.SQLException: stmt pointer is closed
+	at org.sqlite.core.SafeStmtPtr.ensureOpen(SafeStmtPtr.java:148)
+	at org.sqlite.core.SafeStmtPtr.safeRunInt(SafeStmtPtr.java:83)
+	at org.sqlite.jdbc3.JDBC3ResultSet.getInt(JDBC3ResultSet.java:331)
+	at org.sqlite.jdbc3.JDBC3ResultSet.getInt(JDBC3ResultSet.java:336)
+	at services.MedicineService.getAllMedicines(MedicineService.java:61)
+	at ui.AdminDashboard.lambda$asyncRefresh$0(AdminDashboard.java:357)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+
+[2025-11-20 11:41:19][WARN] DB read failed; served data from snapshot.
+[2025-11-20 11:41:22][INFO] SyncServer stopped.
+[2025-11-21 18:21:07][INFO] SyncServer started on port 5050
+[2025-11-21 18:22:16][INFO] SyncServer started on port 5050
+[2025-11-21 18:22:20][INFO] SyncServer stopped.
+[2025-11-21 18:27:47][INFO] SyncServer started on port 5050
+[2025-11-21 18:33:54][INFO] SyncServer started on port 5050
+[2025-11-21 18:34:25][INFO] Added medicine: Soumik
+[2025-11-21 18:34:25][WARN] broadcastRefresh failed: net.MedicineSync.broadcastRefresh()
+[2025-11-21 18:34:39][INFO] Added medicine: Jahid
+[2025-11-21 18:34:39][WARN] broadcastRefresh failed: net.MedicineSync.broadcastRefresh()
+[2025-11-21 18:34:53][INFO] Deleted medicine id=103
+[2025-11-21 18:34:53][WARN] broadcastRefresh failed: net.MedicineSync.broadcastRefresh()
+[2025-11-21 18:34:53][ERROR] DB error in getAllMedicines: stmt pointer is closed
+java.sql.SQLException: stmt pointer is closed
+	at org.sqlite.core.SafeStmtPtr.ensureOpen(SafeStmtPtr.java:148)
+	at org.sqlite.core.SafeStmtPtr.safeRunInt(SafeStmtPtr.java:83)
+	at org.sqlite.jdbc3.JDBC3ResultSet.getInt(JDBC3ResultSet.java:331)
+	at org.sqlite.jdbc3.JDBC3ResultSet.getInt(JDBC3ResultSet.java:336)
+	at services.MedicineService.getAllMedicines(MedicineService.java:61)
+	at ui.AdminDashboard.lambda$asyncRefresh$0(AdminDashboard.java:357)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+
+[2025-11-21 18:34:53][WARN] DB read failed; served data from snapshot.
+[2025-11-21 18:34:58][INFO] Deleted medicine id=104
+[2025-11-21 18:34:58][WARN] broadcastRefresh failed: net.MedicineSync.broadcastRefresh()
+[2025-11-21 18:34:58][ERROR] DB error in getAllMedicines: stmt pointer is closed
+java.sql.SQLException: stmt pointer is closed
+	at org.sqlite.core.SafeStmtPtr.ensureOpen(SafeStmtPtr.java:148)
+	at org.sqlite.core.SafeStmtPtr.safeRunDouble(SafeStmtPtr.java:113)
+	at org.sqlite.jdbc3.JDBC3ResultSet.safeGetDoubleCol(JDBC3ResultSet.java:974)
+	at org.sqlite.jdbc3.JDBC3ResultSet.getDouble(JDBC3ResultSet.java:308)
+	at org.sqlite.jdbc3.JDBC3ResultSet.getDouble(JDBC3ResultSet.java:313)
+	at services.MedicineService.getAllMedicines(MedicineService.java:64)
+	at ui.AdminDashboard.lambda$asyncRefresh$0(AdminDashboard.java:357)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+
+[2025-11-21 18:34:58][WARN] DB read failed; served data from snapshot.
+[2025-11-21 18:34:59][INFO] SyncServer stopped.
+[2025-11-21 18:35:23][INFO] SyncServer started on port 5050
+[2025-11-21 18:35:29][INFO] SyncServer stopped.
+[2025-11-21 18:37:39][INFO] SyncServer started on port 5050
+[2025-11-21 18:37:45][INFO] SyncServer stopped.
+[2025-11-21 18:39:34][INFO] SyncServer started on port 5050
+[2025-11-21 18:39:41][INFO] SyncServer stopped.
+[2025-11-21 18:54:24][INFO] SyncServer started on port 5050
+[2025-11-21 18:57:55][INFO] SyncServer started on port 5050
+[2025-11-21 18:58:16][INFO] Added medicine (id=105): a
+[2025-11-21 18:58:16][WARN] broadcastRefresh failed: net.MedicineSync.broadcastRefresh()
+[2025-11-21 18:58:30][INFO] Deleted medicine id=105
+[2025-11-21 18:58:30][WARN] broadcastRefresh failed: net.MedicineSync.broadcastRefresh()
+[2025-11-21 18:58:30][ERROR] DB error in getAllMedicines: stmt pointer is closed
+java.sql.SQLException: stmt pointer is closed
+	at org.sqlite.core.SafeStmtPtr.ensureOpen(SafeStmtPtr.java:148)
+	at org.sqlite.core.SafeStmtPtr.safeRunInt(SafeStmtPtr.java:83)
+	at org.sqlite.jdbc3.JDBC3ResultSet.next(JDBC3ResultSet.java:73)
+	at services.MedicineService.getAllMedicines(MedicineService.java:59)
+	at ui.AdminDashboard.lambda$asyncRefresh$0(AdminDashboard.java:357)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+
+[2025-11-21 18:58:30][WARN] DB read failed; served data from snapshot.
+[2025-11-21 18:59:13][INFO] SyncServer started on port 5050
+[2025-11-21 18:59:20][INFO] SyncServer stopped.
+[2025-11-21 19:09:34][INFO] SyncServer started on port 5050
+[2025-11-21 19:09:50][INFO] Added medicine (id=106): a
+[2025-11-21 19:09:50][WARN] broadcastRefresh failed: net.MedicineSync.broadcastRefresh()
+[2025-11-21 19:10:58][INFO] Deleted medicine id=106
+[2025-11-21 19:10:58][WARN] broadcastRefresh failed: net.MedicineSync.broadcastRefresh()
+[2025-11-21 19:10:58][ERROR] DB error in getAllMedicines: stmt pointer is closed
+java.sql.SQLException: stmt pointer is closed
+	at org.sqlite.core.SafeStmtPtr.ensureOpen(SafeStmtPtr.java:148)
+	at org.sqlite.core.SafeStmtPtr.safeRunInt(SafeStmtPtr.java:83)
+	at org.sqlite.jdbc3.JDBC3ResultSet.getInt(JDBC3ResultSet.java:331)
+	at org.sqlite.jdbc3.JDBC3ResultSet.getInt(JDBC3ResultSet.java:336)
+	at services.MedicineService.getAllMedicines(MedicineService.java:65)
+	at ui.AdminDashboard.lambda$asyncRefresh$0(AdminDashboard.java:357)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+
+[2025-11-21 19:10:58][WARN] DB read failed; served data from snapshot.
+[2025-11-21 19:18:27][INFO] SyncServer started on port 5050
+[2025-11-21 19:18:40][INFO] Added medicine (id=107): a
+[2025-11-21 19:18:40][WARN] broadcastRefresh failed: net.MedicineSync.broadcastRefresh()
+[2025-11-21 19:18:45][INFO] Deleted medicine id=107
+[2025-11-21 19:18:45][WARN] broadcastRefresh failed: net.MedicineSync.broadcastRefresh()
+[2025-11-21 19:18:45][ERROR] DB error in getAllMedicines: stmt pointer is closed
+java.sql.SQLException: stmt pointer is closed
+	at org.sqlite.core.SafeStmtPtr.ensureOpen(SafeStmtPtr.java:148)
+	at org.sqlite.core.SafeStmtPtr.safeRunInt(SafeStmtPtr.java:83)
+	at org.sqlite.jdbc3.JDBC3ResultSet.next(JDBC3ResultSet.java:73)
+	at services.MedicineService.getAllMedicines(MedicineService.java:59)
+	at ui.AdminDashboard.lambda$asyncRefresh$0(AdminDashboard.java:357)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+
+[2025-11-21 19:18:45][WARN] DB read failed; served data from snapshot.
+[2025-11-21 19:24:58][INFO] SyncServer started on port 5050
+[2025-11-21 19:25:31][INFO] Added medicine (id=108): A
+[2025-11-21 19:25:31][WARN] broadcastRefresh failed: net.MedicineSync.broadcastRefresh()
+[2025-11-21 19:25:37][INFO] Deleted medicine id=108
+[2025-11-21 19:25:37][WARN] broadcastRefresh failed: net.MedicineSync.broadcastRefresh()
+[2025-11-21 19:25:37][ERROR] DB error in getAllMedicines: stmt pointer is closed
+java.sql.SQLException: stmt pointer is closed
+	at org.sqlite.core.SafeStmtPtr.ensureOpen(SafeStmtPtr.java:148)
+	at org.sqlite.core.SafeStmtPtr.safeRunInt(SafeStmtPtr.java:83)
+	at org.sqlite.jdbc3.JDBC3ResultSet.getInt(JDBC3ResultSet.java:331)
+	at org.sqlite.jdbc3.JDBC3ResultSet.getInt(JDBC3ResultSet.java:336)
+	at services.MedicineService.getAllMedicines(MedicineService.java:65)
+	at ui.AdminDashboard.lambda$asyncRefresh$0(AdminDashboard.java:357)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+
+[2025-11-21 19:25:37][WARN] DB read failed; served data from snapshot.
+[2025-11-21 19:43:51][INFO] SyncServer started on port 5050
+[2025-11-21 19:47:00][INFO] SyncServer stopped.
+[2025-11-21 20:09:51][INFO] SyncServer started on port 5050
+[2025-11-21 20:09:57][INFO] SyncServer stopped.
+[2025-11-22 19:28:34][INFO] SyncServer started on port 5050
+[2025-11-22 19:28:39][INFO] SyncServer stopped.
+[2025-11-22 19:34:26][INFO] SyncServer started on port 5050
+[2025-11-22 19:34:35][INFO] SyncServer stopped.
+[2025-11-22 19:38:26][INFO] SyncServer started on port 5050
+[2025-11-22 19:42:59][INFO] SyncServer started on port 5050
+[2025-11-22 19:43:12][INFO] SyncServer stopped.
+[2025-11-23 22:20:08][INFO] SyncServer started on port 5050
+[2025-11-23 22:20:32][INFO] Added medicine: a
+[2025-11-23 22:20:32][WARN] broadcastRefresh failed: net.MedicineSync.broadcastRefresh()
+[2025-11-23 22:20:44][INFO] Deleted medicine id=109
+[2025-11-23 22:20:44][WARN] broadcastRefresh failed: net.MedicineSync.broadcastRefresh()
+[2025-11-23 22:20:44][ERROR] DB error in getAllMedicines: stmt pointer is closed
+java.sql.SQLException: stmt pointer is closed
+	at org.sqlite.core.SafeStmtPtr.ensureOpen(SafeStmtPtr.java:148)
+	at org.sqlite.core.SafeStmtPtr.safeRunInt(SafeStmtPtr.java:83)
+	at org.sqlite.jdbc3.JDBC3ResultSet.next(JDBC3ResultSet.java:73)
+	at services.MedicineService.getAllMedicines(MedicineService.java:59)
+	at ui.AdminDashboard.lambda$asyncRefresh$0(AdminDashboard.java:352)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+
+[2025-11-23 22:20:44][WARN] DB read failed; served data from snapshot.
+[2025-11-23 22:21:15][INFO] SyncServer stopped.
+[2025-11-24 00:26:02][ERROR] DB error in getAllMedicines: stmt pointer is closed
+java.sql.SQLException: stmt pointer is closed
+	at org.sqlite.core.SafeStmtPtr.ensureOpen(SafeStmtPtr.java:148)
+	at org.sqlite.core.SafeStmtPtr.safeRun(SafeStmtPtr.java:127)
+	at org.sqlite.jdbc3.JDBC3ResultSet.safeGetColumnText(JDBC3ResultSet.java:978)
+	at org.sqlite.jdbc3.JDBC3ResultSet.getString(JDBC3ResultSet.java:361)
+	at org.sqlite.jdbc3.JDBC3ResultSet.getString(JDBC3ResultSet.java:366)
+	at services.MedicineService.getAllMedicines(MedicineService.java:63)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:404)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-24 00:26:02][WARN] DB read failed; served data from snapshot.
+[2025-11-24 00:27:57][ERROR] DB error in getAllMedicines: stmt pointer is closed
+java.sql.SQLException: stmt pointer is closed
+	at org.sqlite.core.SafeStmtPtr.ensureOpen(SafeStmtPtr.java:148)
+	at org.sqlite.core.SafeStmtPtr.safeRun(SafeStmtPtr.java:127)
+	at org.sqlite.jdbc3.JDBC3ResultSet.safeGetColumnText(JDBC3ResultSet.java:978)
+	at org.sqlite.jdbc3.JDBC3ResultSet.getString(JDBC3ResultSet.java:361)
+	at org.sqlite.jdbc3.JDBC3ResultSet.getString(JDBC3ResultSet.java:366)
+	at services.MedicineService.getAllMedicines(MedicineService.java:63)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:404)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-24 00:27:57][WARN] DB read failed; served data from snapshot.
+[2025-11-24 00:29:54][ERROR] DB error in getAllMedicines: stmt pointer is closed
+java.sql.SQLException: stmt pointer is closed
+	at org.sqlite.core.SafeStmtPtr.ensureOpen(SafeStmtPtr.java:148)
+	at org.sqlite.core.SafeStmtPtr.safeRunInt(SafeStmtPtr.java:83)
+	at org.sqlite.jdbc3.JDBC3ResultSet.next(JDBC3ResultSet.java:73)
+	at services.MedicineService.getAllMedicines(MedicineService.java:59)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:404)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-24 00:29:54][WARN] DB read failed; served data from snapshot.
+[2025-11-24 11:06:08][INFO] Signup success for mdjahidulislam@gmail.com
+[2025-11-24 11:06:27][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:57)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:404)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-24 11:06:27][WARN] DB read failed; served data from snapshot.
+[2025-11-24 11:07:09][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:57)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:404)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-24 11:07:09][WARN] DB read failed; served data from snapshot.
+[2025-11-24 11:07:49][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:57)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:404)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-24 11:07:49][WARN] DB read failed; served data from snapshot.
+[2025-11-24 11:14:26][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:57)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:404)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-24 11:14:26][WARN] DB read failed; served data from snapshot.
+[2025-11-24 11:14:41][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:57)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:404)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-24 11:14:41][WARN] DB read failed; served data from snapshot.
+[2025-11-24 11:14:52][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:57)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:404)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-24 11:14:52][WARN] DB read failed; served data from snapshot.
+[2025-11-24 11:18:26][INFO] SyncServer started on port 5050
+[2025-11-24 11:18:51][INFO] Added medicine: a
+[2025-11-24 11:18:51][WARN] broadcastRefresh failed: net.MedicineSync.broadcastRefresh()
+[2025-11-24 11:19:17][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:57)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:404)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-24 11:19:17][WARN] DB read failed; served data from snapshot.
+[2025-11-24 11:19:30][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:57)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:404)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-24 11:19:30][WARN] DB read failed; served data from snapshot.
+[2025-11-24 11:27:07][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:57)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:404)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-24 11:27:07][WARN] DB read failed; served data from snapshot.
+[2025-11-24 11:33:08][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:57)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:404)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-24 11:33:08][WARN] DB read failed; served data from snapshot.
+[2025-11-24 11:38:37][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:57)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:404)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-24 11:38:37][WARN] DB read failed; served data from snapshot.
+[2025-11-24 11:43:18][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:57)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:404)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-24 11:43:18][WARN] DB read failed; served data from snapshot.
+[2025-11-24 11:44:36][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:57)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:404)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-24 11:44:36][WARN] DB read failed; served data from snapshot.
+[2025-11-24 11:47:28][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:57)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:404)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-24 11:47:28][WARN] DB read failed; served data from snapshot.
+[2025-11-24 11:58:22][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:57)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:404)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-24 11:58:22][WARN] DB read failed; served data from snapshot.
+[2025-11-24 11:59:24][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:57)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:404)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-24 11:59:24][WARN] DB read failed; served data from snapshot.
+[2025-11-24 11:59:35][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:57)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:404)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-24 11:59:35][WARN] DB read failed; served data from snapshot.
+[2025-11-24 12:16:41][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:57)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:404)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-24 12:16:41][WARN] DB read failed; served data from snapshot.
+[2025-11-24 12:17:33][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:57)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:404)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-24 12:17:33][WARN] DB read failed; served data from snapshot.
+[2025-11-24 12:23:38][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:57)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:404)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-24 12:23:38][WARN] DB read failed; served data from snapshot.
+[2025-11-24 12:23:53][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:57)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:404)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-24 12:23:53][WARN] DB read failed; served data from snapshot.
+[2025-11-24 12:24:04][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:57)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:404)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-24 12:24:04][WARN] DB read failed; served data from snapshot.
+[2025-11-24 12:37:55][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:57)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:428)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-24 12:37:55][WARN] DB read failed; served data from snapshot.
+[2025-11-24 12:38:14][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:57)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:428)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-24 12:38:14][WARN] DB read failed; served data from snapshot.
+[2025-11-24 12:38:28][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:57)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:428)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-24 12:38:28][WARN] DB read failed; served data from snapshot.
+[2025-11-24 12:52:10][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:57)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:428)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-24 12:52:10][WARN] DB read failed; served data from snapshot.
+[2025-11-24 13:09:30][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:57)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:472)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-24 13:09:30][WARN] DB read failed; served data from snapshot.
+[2025-11-24 13:09:49][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:57)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:472)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-24 13:09:49][WARN] DB read failed; served data from snapshot.
+[2025-11-24 13:11:12][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:57)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:428)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-24 13:11:12][WARN] DB read failed; served data from snapshot.
+[2025-11-24 13:11:27][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:57)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:428)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-24 13:11:27][WARN] DB read failed; served data from snapshot.
+[2025-11-24 13:17:51][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:57)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:428)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-24 13:17:51][WARN] DB read failed; served data from snapshot.
+[2025-11-24 13:17:56][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:57)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:428)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-24 13:17:56][WARN] DB read failed; served data from snapshot.
+[2025-11-24 13:18:13][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:57)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:428)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-24 13:18:13][WARN] DB read failed; served data from snapshot.
+[2025-11-24 13:21:21][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:57)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:428)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-24 13:21:21][WARN] DB read failed; served data from snapshot.
+[2025-11-24 13:21:23][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:57)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:428)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-24 13:21:23][WARN] DB read failed; served data from snapshot.
+[2025-11-24 13:24:28][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:57)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:428)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-24 13:24:28][WARN] DB read failed; served data from snapshot.
+[2025-11-24 13:37:16][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:57)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:451)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-24 13:37:16][WARN] DB read failed; served data from snapshot.
+[2025-11-24 13:39:39][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:57)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:428)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-24 13:39:39][WARN] DB read failed; served data from snapshot.
+[2025-11-24 13:41:35][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:57)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:472)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-24 13:41:35][WARN] DB read failed; served data from snapshot.
+[2025-11-24 13:51:09][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:57)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:472)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-24 13:51:09][WARN] DB read failed; served data from snapshot.
+[2025-11-24 13:56:34][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: id)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:57)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:472)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-24 13:56:34][WARN] DB read failed; served data from snapshot.
+[2025-11-24 14:33:47][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: serial_number)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: serial_number)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:60)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:483)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-24 14:33:47][WARN] DB read failed; served data from snapshot.
+[2025-11-24 14:34:04][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: serial_number)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: serial_number)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:60)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:483)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-24 14:34:04][WARN] DB read failed; served data from snapshot.
+[2025-11-24 14:34:17][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: serial_number)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: serial_number)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:60)
+	at models.Inventory.getAllMedicines(Inventory.java:27)
+	at ui.AdminDashboard.show(AdminDashboard.java:84)
+	at ui.AdminLogin.lambda$show$1(AdminLogin.java:150)
+	at javafx.base@25.0.1/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+	at javafx.base@25.0.1/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.base@25.0.1/javafx.event.Event.fireEvent(Event.java:199)
+	at javafx.graphics@25.0.1/javafx.scene.Node.fireEvent(Node.java:9026)
+	at javafx.controls@25.0.1/javafx.scene.control.Button.fire(Button.java:203)
+	at ui.AdminLogin.lambda$show$3(AdminLogin.java:164)
+	at javafx.base@25.0.1/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+	at javafx.base@25.0.1/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.graphics@25.0.1/javafx.scene.Scene.processKeyEvent(Scene.java:2257)
+	at javafx.graphics@25.0.1/javafx.scene.Scene$ScenePeerListener.keyEvent(Scene.java:2791)
+	at javafx.graphics@25.0.1/com.sun.javafx.tk.quantum.GlassViewEventHandler$KeyEventNotification.get(GlassViewEventHandler.java:176)
+	at javafx.graphics@25.0.1/com.sun.javafx.tk.quantum.GlassViewEventHandler$KeyEventNotification.get(GlassViewEventHandler.java:120)
+	at javafx.graphics@25.0.1/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+	at javafx.graphics@25.0.1/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleKeyEvent(GlassViewEventHandler.java:204)
+	at javafx.graphics@25.0.1/com.sun.glass.ui.View.handleKeyEvent(View.java:563)
+	at javafx.graphics@25.0.1/com.sun.glass.ui.View.notifyKeyAndReturnConsumed(View.java:1008)
+
+[2025-11-24 14:34:17][WARN] DB read failed; served data from snapshot.
+[2025-11-24 14:34:17][INFO] SyncServer started on port 5050
+[2025-11-24 14:34:17][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: serial_number)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: serial_number)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:60)
+	at ui.AdminDashboard.lambda$asyncRefresh$0(AdminDashboard.java:352)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+
+[2025-11-24 14:34:17][WARN] DB read failed; served data from snapshot.
+[2025-11-24 14:34:22][INFO] SyncServer stopped.
+[2025-11-24 14:35:13][INFO] SyncServer started on port 5050
+[2025-11-24 14:35:48][INFO] Added medicine: Napa
+[2025-11-24 14:35:48][WARN] broadcastRefresh failed: net.MedicineSync.broadcastRefresh()
+[2025-11-24 14:37:49][INFO] Signup success for mdjahidulislam@gmail.com
+[2025-11-24 15:04:02][INFO] Login invalid password for mdjahidulislam@gmail.com
+[2025-11-24 19:30:22][INFO] SyncServer started on port 5050
+[2025-11-24 19:30:34][INFO] SyncServer stopped.
+[2025-11-24 20:07:45][INFO] Signup success for mdjahidulislam@gmail.com
+[2025-11-24 20:11:04][INFO] SyncServer started on port 5050
+[2025-11-24 20:11:17][INFO] Added medicine: Napa
+[2025-11-24 20:11:17][WARN] broadcastRefresh failed: net.MedicineSync.broadcastRefresh()
+[2025-11-24 22:28:01][INFO] SyncServer started on port 5050
+[2025-11-24 22:28:25][INFO] Added medicine: Napa
+[2025-11-24 22:28:25][WARN] broadcastRefresh failed: net.MedicineSync.broadcastRefresh()
+[2025-11-24 22:29:04][INFO] Signup success for mdjahidulislam@gmail.com
+[2025-11-24 22:58:30][INFO] SyncServer started on port 5050
+[2025-11-24 22:59:04][INFO] Added medicine: Paracetamol
+[2025-11-24 22:59:04][WARN] broadcastRefresh failed: net.MedicineSync.broadcastRefresh()
+[2025-11-25 10:48:16][INFO] SyncServer started on port 5050
+[2025-11-25 10:48:40][INFO] Added medicine: Napa
+[2025-11-25 10:48:40][WARN] broadcastRefresh failed: net.MedicineSync.broadcastRefresh()
+[2025-11-27 22:54:10][INFO] SyncServer started on port 5050
+[2025-11-30 21:41:34][INFO] SyncServer started on port 5050
+[2025-11-30 21:42:15][INFO] Added medicine: napa
+[2025-11-30 21:42:15][WARN] broadcastRefresh failed: net.MedicineSync.broadcastRefresh()
+[2025-11-30 21:43:25][INFO] SyncServer started on port 5050
+[2025-11-30 21:43:52][INFO] Deleted medicine id=1
+[2025-11-30 21:43:52][WARN] broadcastRefresh failed: net.MedicineSync.broadcastRefresh()
+[2025-11-30 21:49:30][INFO] SyncServer started on port 5050
+[2025-11-30 21:49:32][INFO] SyncServer stopped.
+[2025-11-30 21:50:10][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: serial_number)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: serial_number)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:60)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:504)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-30 21:50:10][ERROR] Refresh failed: Failed to load medicines. Please try again.
+utils.AppException: Failed to load medicines. Please try again.
+	at services.MedicineService.getAllMedicines(MedicineService.java:95)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:504)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+Caused by: org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: serial_number)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:60)
+	... 7 more
+
+[2025-11-30 21:50:24][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: serial_number)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: serial_number)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:60)
+	at models.Inventory.getAllMedicines(Inventory.java:27)
+	at ui.AdminDashboard.show(AdminDashboard.java:84)
+	at ui.AdminLogin.lambda$show$1(AdminLogin.java:150)
+	at javafx.base@25.0.1/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+	at javafx.base@25.0.1/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.base@25.0.1/javafx.event.Event.fireEvent(Event.java:199)
+	at javafx.graphics@25.0.1/javafx.scene.Node.fireEvent(Node.java:9026)
+	at javafx.controls@25.0.1/javafx.scene.control.Button.fire(Button.java:203)
+	at javafx.controls@25.0.1/com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:207)
+	at javafx.controls@25.0.1/com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274)
+	at javafx.base@25.0.1/com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)
+	at javafx.base@25.0.1/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+	at javafx.base@25.0.1/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.base@25.0.1/javafx.event.Event.fireEvent(Event.java:199)
+	at javafx.graphics@25.0.1/javafx.scene.Scene$MouseHandler.process(Scene.java:4061)
+	at javafx.graphics@25.0.1/javafx.scene.Scene.processMouseEvent(Scene.java:1947)
+	at javafx.graphics@25.0.1/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2784)
+	at javafx.graphics@25.0.1/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.get(GlassViewEventHandler.java:353)
+	at javafx.graphics@25.0.1/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.get(GlassViewEventHandler.java:255)
+	at javafx.graphics@25.0.1/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+	at javafx.graphics@25.0.1/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:387)
+	at javafx.graphics@25.0.1/com.sun.glass.ui.View.handleMouseEvent(View.java:573)
+	at javafx.graphics@25.0.1/com.sun.glass.ui.View.notifyMouse(View.java:975)
+	at javafx.graphics@25.0.1/com.sun.glass.ui.mac.MacView.notifyMouse(MacView.java:131)
+
+[2025-11-30 21:50:31][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: serial_number)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: serial_number)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:60)
+	at models.Inventory.getAllMedicines(Inventory.java:27)
+	at ui.AdminDashboard.show(AdminDashboard.java:84)
+	at ui.AdminLogin.lambda$show$1(AdminLogin.java:150)
+	at javafx.base@25.0.1/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+	at javafx.base@25.0.1/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.base@25.0.1/javafx.event.Event.fireEvent(Event.java:199)
+	at javafx.graphics@25.0.1/javafx.scene.Node.fireEvent(Node.java:9026)
+	at javafx.controls@25.0.1/javafx.scene.control.Button.fire(Button.java:203)
+	at javafx.controls@25.0.1/com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:207)
+	at javafx.controls@25.0.1/com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274)
+	at javafx.base@25.0.1/com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)
+	at javafx.base@25.0.1/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+	at javafx.base@25.0.1/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.base@25.0.1/javafx.event.Event.fireEvent(Event.java:199)
+	at javafx.graphics@25.0.1/javafx.scene.Scene$MouseHandler.process(Scene.java:4061)
+	at javafx.graphics@25.0.1/javafx.scene.Scene.processMouseEvent(Scene.java:1947)
+	at javafx.graphics@25.0.1/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2784)
+	at javafx.graphics@25.0.1/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.get(GlassViewEventHandler.java:353)
+	at javafx.graphics@25.0.1/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.get(GlassViewEventHandler.java:255)
+	at javafx.graphics@25.0.1/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+	at javafx.graphics@25.0.1/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:387)
+	at javafx.graphics@25.0.1/com.sun.glass.ui.View.handleMouseEvent(View.java:573)
+	at javafx.graphics@25.0.1/com.sun.glass.ui.View.notifyMouse(View.java:975)
+	at javafx.graphics@25.0.1/com.sun.glass.ui.mac.MacView.notifyMouse(MacView.java:131)
+
+[2025-11-30 21:50:32][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: serial_number)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: serial_number)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:60)
+	at models.Inventory.getAllMedicines(Inventory.java:27)
+	at ui.AdminDashboard.show(AdminDashboard.java:84)
+	at ui.AdminLogin.lambda$show$1(AdminLogin.java:150)
+	at javafx.base@25.0.1/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+	at javafx.base@25.0.1/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.base@25.0.1/javafx.event.Event.fireEvent(Event.java:199)
+	at javafx.graphics@25.0.1/javafx.scene.Node.fireEvent(Node.java:9026)
+	at javafx.controls@25.0.1/javafx.scene.control.Button.fire(Button.java:203)
+	at javafx.controls@25.0.1/com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:207)
+	at javafx.controls@25.0.1/com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274)
+	at javafx.base@25.0.1/com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)
+	at javafx.base@25.0.1/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+	at javafx.base@25.0.1/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.base@25.0.1/javafx.event.Event.fireEvent(Event.java:199)
+	at javafx.graphics@25.0.1/javafx.scene.Scene$MouseHandler.process(Scene.java:4061)
+	at javafx.graphics@25.0.1/javafx.scene.Scene.processMouseEvent(Scene.java:1947)
+	at javafx.graphics@25.0.1/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2784)
+	at javafx.graphics@25.0.1/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.get(GlassViewEventHandler.java:353)
+	at javafx.graphics@25.0.1/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.get(GlassViewEventHandler.java:255)
+	at javafx.graphics@25.0.1/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+	at javafx.graphics@25.0.1/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:387)
+	at javafx.graphics@25.0.1/com.sun.glass.ui.View.handleMouseEvent(View.java:573)
+	at javafx.graphics@25.0.1/com.sun.glass.ui.View.notifyMouse(View.java:975)
+	at javafx.graphics@25.0.1/com.sun.glass.ui.mac.MacView.notifyMouse(MacView.java:131)
+
+[2025-11-30 21:50:56][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: serial_number)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: serial_number)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:60)
+	at models.Inventory.getAllMedicines(Inventory.java:27)
+	at ui.AdminDashboard.show(AdminDashboard.java:84)
+	at ui.AdminLogin.lambda$show$1(AdminLogin.java:150)
+	at javafx.base@25.0.1/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+	at javafx.base@25.0.1/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.base@25.0.1/javafx.event.Event.fireEvent(Event.java:199)
+	at javafx.graphics@25.0.1/javafx.scene.Node.fireEvent(Node.java:9026)
+	at javafx.controls@25.0.1/javafx.scene.control.Button.fire(Button.java:203)
+	at javafx.controls@25.0.1/com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:207)
+	at javafx.controls@25.0.1/com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274)
+	at javafx.base@25.0.1/com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)
+	at javafx.base@25.0.1/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+	at javafx.base@25.0.1/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.base@25.0.1/javafx.event.Event.fireEvent(Event.java:199)
+	at javafx.graphics@25.0.1/javafx.scene.Scene$MouseHandler.process(Scene.java:4061)
+	at javafx.graphics@25.0.1/javafx.scene.Scene.processMouseEvent(Scene.java:1947)
+	at javafx.graphics@25.0.1/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2784)
+	at javafx.graphics@25.0.1/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.get(GlassViewEventHandler.java:353)
+	at javafx.graphics@25.0.1/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.get(GlassViewEventHandler.java:255)
+	at javafx.graphics@25.0.1/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+	at javafx.graphics@25.0.1/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:387)
+	at javafx.graphics@25.0.1/com.sun.glass.ui.View.handleMouseEvent(View.java:573)
+	at javafx.graphics@25.0.1/com.sun.glass.ui.View.notifyMouse(View.java:975)
+	at javafx.graphics@25.0.1/com.sun.glass.ui.mac.MacView.notifyMouse(MacView.java:131)
+
+[2025-11-30 21:51:10][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: serial_number)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: serial_number)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:60)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:504)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+
+[2025-11-30 21:51:10][ERROR] Refresh failed: Failed to load medicines. Please try again.
+utils.AppException: Failed to load medicines. Please try again.
+	at services.MedicineService.getAllMedicines(MedicineService.java:95)
+	at ui.CustomerDashboard.lambda$refreshMedicines$0(CustomerDashboard.java:504)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1781)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+Caused by: org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: serial_number)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:60)
+	... 7 more
+
+[2025-11-30 21:51:22][ERROR] DB error in getAllMedicines: [SQLITE_ERROR] SQL error or missing database (no such column: serial_number)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: serial_number)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:135)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:87)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:458)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:85)
+	at services.MedicineService.getAllMedicines(MedicineService.java:60)
+	at models.Inventory.getAllMedicines(Inventory.java:27)
+	at ui.AdminDashboard.show(AdminDashboard.java:84)
+	at ui.AdminLogin.lambda$show$1(AdminLogin.java:150)
+	at javafx.base@25.0.1/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+	at javafx.base@25.0.1/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.base@25.0.1/javafx.event.Event.fireEvent(Event.java:199)
+	at javafx.graphics@25.0.1/javafx.scene.Node.fireEvent(Node.java:9026)
+	at javafx.controls@25.0.1/javafx.scene.control.Button.fire(Button.java:203)
+	at javafx.controls@25.0.1/com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:207)
+	at javafx.controls@25.0.1/com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274)
+	at javafx.base@25.0.1/com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)
+	at javafx.base@25.0.1/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+	at javafx.base@25.0.1/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@25.0.1/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.base@25.0.1/javafx.event.Event.fireEvent(Event.java:199)
+	at javafx.graphics@25.0.1/javafx.scene.Scene$MouseHandler.process(Scene.java:4061)
+	at javafx.graphics@25.0.1/javafx.scene.Scene.processMouseEvent(Scene.java:1947)
+	at javafx.graphics@25.0.1/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2784)
+	at javafx.graphics@25.0.1/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.get(GlassViewEventHandler.java:353)
+	at javafx.graphics@25.0.1/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.get(GlassViewEventHandler.java:255)
+	at javafx.graphics@25.0.1/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+	at javafx.graphics@25.0.1/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:387)
+	at javafx.graphics@25.0.1/com.sun.glass.ui.View.handleMouseEvent(View.java:573)
+	at javafx.graphics@25.0.1/com.sun.glass.ui.View.notifyMouse(View.java:975)
+	at javafx.graphics@25.0.1/com.sun.glass.ui.mac.MacView.notifyMouse(MacView.java:131)
+
+[2025-11-30 21:52:53][INFO] SyncServer started on port 5050
+[2025-11-30 21:53:33][INFO] SyncServer stopped.
+[2025-12-13 11:57:05][INFO] SyncServer started on port 5050
