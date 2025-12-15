@@ -338,29 +338,30 @@ public class MedicineService {
     }
 
     public boolean deleteMedicine(int id) {
-        String sql = "DELETE FROM medicines WHERE serial_number = ?";
+        // Step 1: Attempt to delete the medicine, let the database handle cascading
+        String deleteSql = "DELETE FROM medicines WHERE serial_number = ?";
         try (Connection conn = DBHelper.getConnection();
-             PreparedStatement stmt = conn.prepareStatement(sql)) {
+             PreparedStatement stmt = conn.prepareStatement(deleteSql)) {
 
             stmt.setInt(1, id);
             boolean ok = stmt.executeUpdate() > 0;
             if (ok) {
                 FileLogger.info("Deleted medicine id=" + id);
-                onDataChanged();
+                onDataChanged();  // Notify listeners about the data change
             }
             return ok;
 
         } catch (SQLException e) {
             FileLogger.error("DB error deleteMedicine(id=" + id + "): " + e.getMessage(), e);
             try {
-                appendFailsafe("delete",
-                        new Medicine(id, null, null, 0.0, 0, null, null));
+                appendFailsafe("delete", new Medicine(id, null, null, 0.0, 0, null, null));
             } catch (Exception ioEx) {
                 FileLogger.warn("Failsafe log failed: " + ioEx.getMessage());
             }
             throw new AppException("Could not delete medicine (database error).", e);
         }
     }
+
 
     /* =======================
        Helpers

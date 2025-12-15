@@ -1,6 +1,8 @@
 package utils;
 
 import java.sql.*;
+import java.nio.file.*;
+import java.nio.charset.StandardCharsets;
 
 public class DBHelper {
 
@@ -24,11 +26,14 @@ public class DBHelper {
         return conn;
     }
 
+    /**
+     * Applies important PRAGMAs for performance and foreign key constraints.
+     */
     private static void applyPragmas(Connection c) {
         try (Statement st = c.createStatement()) {
             st.execute("PRAGMA journal_mode = WAL");
             st.execute("PRAGMA synchronous = NORMAL");
-            st.execute("PRAGMA foreign_keys = ON");
+            st.execute("PRAGMA foreign_keys = ON");  // Ensures foreign key constraints are applied
             st.execute("PRAGMA busy_timeout = " + BUSY_TIMEOUT_MS);
 
             st.execute("PRAGMA temp_store = MEMORY");
@@ -47,45 +52,56 @@ public class DBHelper {
 
             // users table
             stmt.execute("""
-                CREATE TABLE IF NOT EXISTS users (
-                    id INTEGER PRIMARY KEY AUTOINCREMENT,
-                    firstName   TEXT NOT NULL,
-                    lastName    TEXT NOT NULL,
-                    phone       TEXT NOT NULL,
-                    email       TEXT UNIQUE NOT NULL,
-                    password    TEXT NOT NULL,
-                    address     TEXT,
-                    avatar_path TEXT,
-                    updated_at  INTEGER
-                )
+            CREATE TABLE IF NOT EXISTS users (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                firstName   TEXT NOT NULL,
+                lastName    TEXT NOT NULL,
+                phone       TEXT NOT NULL,
+                email       TEXT UNIQUE NOT NULL,
+                password    TEXT NOT NULL,
+                address     TEXT,
+                avatar_path TEXT,
+                updated_at  INTEGER
+            )
             """);
 
             // medicines table
             stmt.execute("""
-                CREATE TABLE IF NOT EXISTS medicines (
-                    serial_number INTEGER PRIMARY KEY AUTOINCREMENT,
-                    name          TEXT NOT NULL,
-                    category      TEXT NOT NULL,
-                    price         REAL NOT NULL,
-                    quantity      INTEGER NOT NULL,
-                    expiry        TEXT NOT NULL,
-                    image_path    TEXT,
-                    last_updated  INTEGER
-                )
+            CREATE TABLE IF NOT EXISTS medicines (
+                serial_number INTEGER PRIMARY KEY AUTOINCREMENT,
+                name          TEXT NOT NULL,
+                category      TEXT NOT NULL,
+                price         REAL NOT NULL,
+                quantity      INTEGER NOT NULL,
+                expiry        TEXT NOT NULL,
+                image_path    TEXT,
+                last_updated  INTEGER
+            )
             """);
 
-            // ONE table for orders + items
+            // order_items table (links medicines and users in orders)
             stmt.execute("""
-                CREATE TABLE IF NOT EXISTS order_items (
-                    order_id    INTEGER PRIMARY KEY AUTOINCREMENT,
-                    user_id     INTEGER NOT NULL,
-                    medicine_id INTEGER NOT NULL,
-                    quantity    INTEGER NOT NULL,
-                    total_price REAL NOT NULL,
-                    order_date  TEXT NOT NULL,
-                    FOREIGN KEY (medicine_id) REFERENCES medicines(serial_number),
-                    FOREIGN KEY (user_id) REFERENCES users(id)
-                )
+            CREATE TABLE IF NOT EXISTS order_items (
+                order_id    INTEGER PRIMARY KEY AUTOINCREMENT,
+                user_id     INTEGER NOT NULL,
+                medicine_id INTEGER NOT NULL,
+                quantity    INTEGER NOT NULL,
+                total_price REAL NOT NULL,
+                order_date  TEXT NOT NULL,
+                FOREIGN KEY (medicine_id) REFERENCES medicines(serial_number) ON DELETE CASCADE,
+                FOREIGN KEY (user_id) REFERENCES users(id)
+            )
+            """);
+
+            // orders table (to track orders independently)
+            stmt.execute("""
+            CREATE TABLE IF NOT EXISTS orders (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                user_id INTEGER NOT NULL,
+                total_price REAL NOT NULL,
+                order_date TEXT NOT NULL,
+                FOREIGN KEY (user_id) REFERENCES users(id)
+            )
             """);
 
         } catch (SQLException e) {
@@ -95,11 +111,10 @@ public class DBHelper {
     }
 
     /**
-     * Migrations for already-existing DBs (old schema).
+     * Run database migrations for schema changes.
      */
     private static void runMigrations(Connection c) {
         try (Statement st = c.createStatement()) {
-
             // --- order_items.user_id (old table may not have it)
             if (!columnExists(c, "order_items", "user_id")) {
                 st.execute("ALTER TABLE order_items ADD COLUMN user_id INTEGER");
@@ -148,6 +163,9 @@ public class DBHelper {
         }
     }
 
+    /**
+     * Ensures indexes exist for key columns for better query performance.
+     */
     private static void ensureIndexes(Connection c) {
         try (Statement st = c.createStatement()) {
             st.execute("CREATE INDEX IF NOT EXISTS idx_users_email ON users(email)");
@@ -165,6 +183,9 @@ public class DBHelper {
         }
     }
 
+    /**
+     * Check if a column exists in the given table.
+     */
     private static boolean columnExists(Connection c, String table, String column) {
         String sql = "PRAGMA table_info(" + table + ")";
         try (PreparedStatement ps = c.prepareStatement(sql);
@@ -179,6 +200,9 @@ public class DBHelper {
         return false;
     }
 
+    /**
+     * Close the database connection if it is open.
+     */
     public static synchronized void closeConnection() {
         if (conn != null) {
             try {
