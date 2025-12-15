@@ -1,0 +1,102 @@
+ID,Name,Category,Price,Quantity,Expiry,ImagePath
+1,Ace XR,Pain Relief,18.28,200,2030-02-02,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/c7e80356b9a74686bbd0d962ff061454.png
+2,Xyloken,Pain Relief,100.00,230,2033-03-12,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/e53fa91c945245b38245615cae30fc28.png
+3,Xpa XR,Pain Relief,20.00,290,2033-04-04,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/f055ebf42ab243b180e4702f3120f9b8.png
+4,Ace,Pain Relief,50.00,300,2034-09-09,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/abe75236aef542a483f594b83964f07d.png
+5,Renova XR,Pain Relief,55.00,200,2032-05-05,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/d7004a3160e74d189dda90abcbd78aed.png
+6,Diamicron Mr 60 mg,Diabetes,310.00,300,2033-09-06,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/0f6d03d801004075a6acfd4fefe52b67.png
+7,Progest,Diabetes,582.00,200,2032-04-30,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/1d93762c8bb04d39ba2a3c3698b858bb.png
+8,Empa 10,Diabetes,344.44,300,2031-06-09,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/83537740a6a54c3587ac116ba054265b.png
+9,Linax,Diabetes,72.72,300,2031-03-04,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/0103b1433950459a89aa65f44efe005e.png
+10,Dimerol,Diabetes,102.50,350,2033-04-21,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/2e0bf13879c84afab3f503593f4fdcd9.png
+11,Bislol 2.5,Cardiac,90.00,150,2034-08-16,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/1c5763326d3f4a299bfa3f0b9de8e363.png
+12,Bislol 5,Cardiac,150.00,300,2034-09-08,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/00b1ce414ce2405a9296c63109f1689d.png
+13,ATV 10,Cardiac,45.45,300,2035-06-09,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/34bf56e2d2294e33b3427c76140860d7.png
+14,Bisopro 2.5,Cardiac,55.00,400,2032-03-15,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/c8caf79c79fd4edda5e7ff8f515f989c.png
+15,Bisopro 2.5,Cardiac,55.00,200,2031-02-02,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/ac662117b81548b48f4e97dbd3c7448d.png
+16,Xinc B,Vitamins,100.00,300,2035-09-07,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/bb363b0c97054629b5509558544d7828.png
+17,Calbo D,Vitamins,220.00,300,2036-07-08,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/46b13dbfed784050877bb699ac5e8485.png
+18,Neuroblast,Vitamins,100.00,134,2030-05-28,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/302accf9a8324a96b4eade5a13eae73b.png
+19,Dicaltrol Plus,Vitamins,100.00,390,2029-03-02,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/ddb23115646547b3ac565e0687a96675.png
+20,Rex,Vitamins,95.00,230,2029-03-05,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/b6315c2aa5ec446e8f7fa290cb538b16.png
+21,Trugain 5%,Dermatology,510.00,200,2036-03-04,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/60407c789bab4a52a8a5db08838bce28.png
+22,Tetrasol,Dermatology,120.00,300,2031-09-03,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/2da01de857654c02a514e97d433c10eb.png
+23,Pevisone 10 mg,Dermatology,150.00,290,2040-09-14,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/cc9a844973124f52bf6fe3bd2b7a4c63.png
+24,Bactrocin,Dermatology,136.00,4000,2032-03-07,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/7d57a22d53eb4c9bb8c2a1fcb168f1b5.png
+25,Derobin Ointment,Dermatology,264.00,300,2033-04-15,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/b4b40aa601344179a927495c6d75f5e3.png
+26,Neo care Baby wipes 120 pieces,Baby care,233.00,100,2029-08-24,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/b0c7e937b8bd49f5a98fc01ba6a3eda0.png
+27,Savlon Twinkle Baby pant Diaper,Baby Care,872.00,100,2031-04-03,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/b421cf9d21d243c895e422f4212cd088.png
+28,Aveno Baby Daily care Lotion,Baby Care,1000.00,21,2033-09-08,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/f5b2d96a65874614b22bf5443be7ed04.png
+29,Parachute Lotion,Baby Care,200.00,10,2031-03-04,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/bcae56043fc44aa3af76eb626e5495b6.png
+30,Meril Toothpaste,Baby Care,200.00,150,2031-02-05,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/6bb9f95cfa2f4dd6a24fea42d33fec76.png
+31,Monas 10,Respiratory,250.00,29,2032-05-12,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/3049bd9d4a1343968bcf16ba2595c2ab.png
+32,Montela 10,Respiratory,100.00,200,2031-03-04,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/4c3107c406f34fb7b6d90832f2935f73.png
+33,Provair 10,Respiratory,165.00,200,2034-09-18,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/8082663c48084a6d914cced2169b163a.png
+34,Lumona 10,Respiratory,155.00,30,2035-04-03,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/570e1b8977c244459f5610f2cdb8aaeb.png
+35,Montene 10,Respiratory,157.50,300,2036-10-19,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/862001a39fa34d768c4c2d886cd1dc7d.png
+36,HAIR SPRAY 5%,OTC,250.00,200,2031-09-02,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/602e1354ae4b455dac1355c5ac4ae12f.png
+37,hair spray 10%,OTC,300.00,100,2032-12-06,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/c02a4a3ad9df424cb845910c1cc49a1e.png
+38,DS SHAMPOO,OTC,400.00,20,2035-03-09,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/df0372da53834d71bea1cd93cf86c2c3.png
+39,VET POWDER,OTC,200.00,30,2036-10-07,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/aaed23872087420a943c931b3e118925.png
+40,OTC VET,OTC,240.00,29,2035-09-08,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/400fcba8e70142709180a707fbac4a4b.png
+41,Doxicap 100,Antibiotics,240.00,20,2029-03-06,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/55bdccad1609486eb4858124374e132f.png
+42,Zimax 500,Antibiotics,230.00,23,2031-11-12,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/624471bde4384e09848dee7795f07890.png
+43,Optimox,Antibiotics,240.00,29,2037-04-23,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/f87b51793d494a6db962689dbc2aa9ef.png
+44,Cef-3,Antibiotics,300.00,27,2037-06-10,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/1376914c73644bb49f73f43e89de3b3b.png
+45,Cefaclav 500,Antibiotics,300.00,40,2033-09-07,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/6d65082bf60a486589b69db523939e5d.png
+46,Women's Plus,Women's Health,590.00,26,2032-04-30,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/5e22b9ef5eeb48b193646ed673756fa3.png
+47,Jenosia Ashoka,Women's Health,200.00,190,2027-09-23,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/6fbef107ab2341e499566dce05d354dd.png
+48,Pulsatilla Q 100ml,Women's Health,230.00,39,2034-05-02,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/5a6241d6296b4c94b693bbea243fd359.png
+49,Evening Primrose Oil,Women's Health,230.00,120,2036-03-02,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/0f5914ed21984cf98603ae17c92b1aa1.png
+50,Cyst Drops DP,Women's Health,500.00,23,2030-03-03,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/3a078f7da5404179b61826cdd35dbc61.png
+51,Cat Food,Pet,900.00,22,2027-03-02,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/bb2a06146f2847a6b4280f3e31de5d11.png
+52,Cat food Tuna,Pet,700.00,30,2029-05-04,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/7c9cd1f88fc24fc08ff4e8bcda889e72.png
+53,Cat Food Chicken,Pet,700.00,23,2027-04-06,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/0382fc605b0f40fb8c712bd99ca331f2.png
+54,Dog Food Chicken,Pet,650.00,45,2033-09-08,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/56d3ef407e534ac0ae464bb16f865fc7.png
+55,Dog food egg,Pet,270.00,290,2036-02-28,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/b23e625d708a4612b024609c9531a9eb.png
+56,Energy Booster,Herbal,300.00,20,2031-05-08,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/c64b444479a245498e87677cd8103944.png
+57,Maca Powder,Herbal,450.00,25,2035-03-09,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/318425e05cb747a5b0ede7eda04aea3b.png
+58,Glutalight,Herbal,200.00,130,2035-06-22,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/f0e2bc471e694a29bf1a3c27dffa28c4.png
+59,Acure Alkushi powder,Herbal,210.00,230,2031-04-06,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/f2d2940210ce4430ad9629d5ef53165c.png
+60,Shimul root powder,Herbal,300.00,29,2036-04-09,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/95e7c2631f744a6d8728adebfb47f247.png
+61,Rhinozol 0.1%,E.N.T,20.00,300,2036-03-03,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/0df6ab0e2757471e93918c61c9bee564.png
+62,Nasal Spray,E.N.T,135.00,30,2038-05-10,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/4dd89da8e0474a5a9308bff4eae3b535.png
+63,Fexo 60,Allergy,80.00,5,2035-12-20,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/639fe1bd227845a5b89c02a2ab0f70a8.png
+64,Alatrol,Allergy,350.00,23,2031-02-03,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/1ab9c327b52849b7baa4fd651d09e106.png
+65,Fenadin,Allergy,90.00,20,2031-02-02,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/47dd132d5c17493284fa94f6ec1cdb45.png
+66,Delfex 120,Allergy,200.00,19,2034-05-27,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/395aeeaefa5b4375bf44ec9aa7386fa2.png
+67,Micoral Gel,E.N.T,100.00,20,2036-04-05,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/b71864cf772b4a6d8733379845fce8e1.png
+68,Orostar Plus,E.N.T,200.00,200,2031-03-02,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/74bf6364aed24d7995fa7809e14df7ed.png
+69,Gelora Oral gel,E.N.T,60.00,30,2036-09-03,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/88819f612bfa474b9b1c93108b5e3ef2.png
+70,Oral Gel,E.N.T,340.00,250,2037-04-03,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/b23dcebb30014f7faf59bc95136f8495.png
+71,Duralax,Gastrointestinal System,300.00,200,2031-09-05,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/5b2b7f04ced0480dba59dd03375c59bf.png
+72,Amodis 400,Gastrointestinal System,30.00,200,2033-05-04,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/cad6cbefa40943b6bd88885f4e9a8345.png
+73,Motigut,Gastrointestinal System,35.00,140,2032-04-05,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/cddf62d357cb4d4e94bf0deff9e04db2.png
+74,Entacyd Plus,Gastrointestinal System,80.00,230,2036-04-02,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/31472f45cd8242d69716a78f23247b01.png
+75,Flacol,Gastrointestinal System,35.00,233,2036-07-09,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/72c3f12b299f451f9dd452194b51e0d9.png
+76,Entacyd plus syrup,Gastrointestinal System,80.00,22,2040-09-08,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/07d29ada736c46b8a11d33fe2718b8fd.png
+77,Dexlan,Gastrointestinal System,240.00,230,2032-04-13,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/c1bf26e0f398450c8ad34596a7a123ec.png
+78,Losectil,Gastrointestinal System,200.00,30,2036-03-02,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/046632d765c2496184a998d3218e335a.png
+79,Finix 20,Gastrointestinal System,130.00,30,2032-04-18,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/7b38c448cb8c4120b15d7641b09f4a27.png
+80,Don A,Gastrointestinal System,200.00,30,2031-04-09,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/b35212460b9e49738542aae04d0a9342.png
+81,Vigalon,Eye Preparations,25.00,300,2030-04-06,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/c4cd4c6228fc438d99898dbe11d2a67b.png
+82,Aquafresh Pf,Eye Preparations,600.00,20,2034-03-02,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/c9ddfa5ba0de4d73ac3897cdceed6c29.png
+83,TR Care,Eye Preparations,260.00,40,2034-03-05,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/3f8e8ce3feef4952ace106221cc0f1e4.png
+84,Systear,Eye Preparations,56.00,70,2035-09-08,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/ff913f1d00e34af7a1add15da3e36e98.png
+85,Lacrigel,Eye Preparations,280.00,30,2034-03-05,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/c1c419dc1abe4cdba2c7714150af5032.png
+86,Sinafresh,Eye Preparations,50.00,200,2033-03-03,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/3098a9d4355a4ad680c86b99ed4a17c2.png
+87,Best Fresh,Eye Preparations,300.00,200,2035-06-09,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/5a97ed8a520a417299b9a6a0c9cca446.png
+88,Nebanol,Eye Preparations,60.00,200,2030-05-05,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/6ea0849a21bd4a898c30d4a4ee2ec1e2.png
+89,Drylief,Eye Preparations,300.00,34,2034-06-07,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/1a527d7b35154535b57be7a4a5a241d4.png
+90,Zeefol-CI,Anemia & Other Blood Disorders,45.00,200,2031-04-06,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/848c5466cd3446dcbe2b17007cffc296.png
+91,Revocit,Anemia & Other Blood Disorders,30.00,20,2032-04-05,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/047fb5c64f4947c9a5661888ddd0062e.png
+92,Ferix-V,Anemia & Other Blood Disorders,200.00,300,2037-04-05,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/16e6c6ee395c4aeea57c33e4647eb548.png
+93,Supravit,Anemia & Other Blood Disorders,300.00,23,2034-05-06,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/6772e852ec0b417b8c258ff4792b75bb.png
+94,B-9,Anemia & Other Blood Disorders,380.00,230,2034-03-05,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/d49c0616214345cdb0200657f6d759d1.png
+95,Zif-A,Anemia & Other Blood Disorders,50.00,200,2034-09-18,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/7a6309e9c76c4253acc427b9acc8be52.png
+96,Feglo-FZ,Anemia & Other Blood Disorders,300.00,20,2032-04-03,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/1d3c6f9e79bb48fd84fec26f59fc4c94.png
+97,Ipec-plus,Anemia & Other Blood Disorders,63.00,300,2036-03-04,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/02b63f3d10654bfaa51d6ff062af9dd4.png
+98,Oroxat 70,Anemia & Other Blood Disorders,60.00,230,2032-04-05,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/15be411289e54694950b8e361ecb1401.png
+99,Feofol -CI,Anemia & Other Blood Disorders,300.00,21,2031-04-05,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/926b2a5a5d5540cd97baf85593f7bd57.png
+100,Zif-Forte,Anemia & Other Blood Disorders,300.00,200,2031-04-05,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/988ef86861264e708bc2580ac9ff2a68.png
+101,Napa,PainKiller,15.00,90,2026-12-12,/Users/md.jahidulislam/Desktop/MediMart-main/medimart_data/images/c26f3e62b3994b0fb147aafa1d48ebb6.jpg
