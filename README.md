@@ -242,13 +242,9 @@ Then run ui.Main.
 
 - Admin route protection
 
-# 🌱 Future Improvements
-
 ✅ **Web version already implemented** using:
 - React + Vite (Frontend)
 - Spring Boot REST API (Backend)
-
-🔜 Planned Enhancements:
 - Cloud-based database
 - WebSocket real-time sync
 - Secure online payment gateway
