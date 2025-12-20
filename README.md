@@ -242,7 +242,7 @@ Then run ui.Main.
 
 - Admin route protection
 
-✅ **Web version already implemented** using:
+# ✅ **Web version already implemented** using:
 - React + Vite (Frontend)
 - Spring Boot REST API (Backend)
 - Cloud-based database
@@ -250,3 +250,7 @@ Then run ui.Main.
 - Secure online payment gateway
 - Admin analytics dashboard
 
+# 🌱 Future Improvements:
+
+- Live AI-powered medicine suggestion
+- Prescription scanning
