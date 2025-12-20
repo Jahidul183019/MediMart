@@ -4,6 +4,20 @@ MediMart is a **JavaFX-based desktop application** designed to modernize and aut
 The system is built with a clean **MVC architecture**, modular services, SQLite integration, and a polished JavaFX UI.
 
 ---
+
+---
+
+## 🌐 Web Version (Live)
+
+🚀 **Live Web App:** https://medimart-frontend-coral.vercel.app/  
+
+⚙️ **Frontend (React + Vite):** https://github.com/Jahidul183019/medimart-frontend  
+
+🛠 **Backend (Spring Boot):** https://github.com/Jahidul183019/medimart-backend  
+
+>  This repository contains the **JavaFX Desktop version** of MediMart.  
+> The **web version** is implemented separately using **React + Spring Boot**.
+
 ## 🛠️ Tools & Technologies Used
 
 | **Category**       | **Tools / Technologies** |
@@ -229,5 +243,15 @@ Then run ui.Main.
 
 - Admin route protection
 
-# 🌱 Future Improvements:
-Transform MediMart into a full web application with REST APIs, cloud database, React/Angular frontend, real-time WebSocket sync, secure payments, and advanced analytics dashboards.
+# 🌱 Future Improvements
+
+✅ **Web version already implemented** using:
+- React + Vite (Frontend)
+- Spring Boot REST API (Backend)
+
+🔜 Planned Enhancements:
+- Cloud-based database
+- WebSocket real-time sync
+- Secure online payment gateway
+- Admin analytics dashboard
+
