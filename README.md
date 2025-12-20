@@ -5,8 +5,6 @@ The system is built with a clean **MVC architecture**, modular services, SQLite 
 
 ---
 
----
-
 ## 🌐 Web Version (Live)
 
 🚀 **Live Web App:** https://medimart-frontend-coral.vercel.app/  
@@ -18,6 +16,7 @@ The system is built with a clean **MVC architecture**, modular services, SQLite 
 >  This repository contains the **JavaFX Desktop version** of MediMart.  
 > The **web version** is implemented separately using **React + Spring Boot**.
 
+---
 ## 🛠️ Tools & Technologies Used
 
 | **Category**       | **Tools / Technologies** |
