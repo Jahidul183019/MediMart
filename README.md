@@ -17,7 +17,7 @@ The system is built with a clean **MVC architecture**, modular services, SQLite 
 
 1. **Download the JAR file** from the link above.
 
-2. **Ensure you have Java 17+ and JavaFX 25** installed. Download JavaFX SDK from [Gluon JavaFX SDK](https://gluonhq.com/products/javafx/).
+2. **Ensure you have Java 25 and JavaFX 25** installed. Download JavaFX SDK from [Gluon JavaFX SDK](https://gluonhq.com/products/javafx/).
 
 3. **Run the JAR File in Terminal**:
 
