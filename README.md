@@ -21,12 +21,12 @@ The system is built with a clean **MVC architecture**, modular services, SQLite 
 
 3. **Run the JAR File in Terminal**:
 
-  ### For macOS/Linux:
-  ```bash
-  java \
-  --module-path /path/to/javafx-sdk-25.0.1/lib \
-  --add-modules javafx.controls,javafx.fxml \
-  -jar /path/to/MediMart.jar
+ ### For macOS/Linux:
+```bash
+java \
+--module-path /path/to/javafx-sdk-25.0.1/lib \
+--add-modules javafx.controls,javafx.fxml \
+-jar /path/to/MediMart.jar
    ```
   ### For Windows:
   ```bash
@@ -36,8 +36,17 @@ java ^
 -jar "C:\path\to\MediMart.jar"
 
 ```
+
+### Tested Command(macOS)
+```bash
+java \
+--module-path /Users/md.jahidulislam/Downloads/javafx-sdk-25.0.1/lib \
+--add-modules javafx.controls,javafx.fxml \
+-jar /Users/md.jahidulislam/Desktop/MediMart.jar
+```
   > Make sure to replace /path/to/javafx-sdk-25.0.1/lib with the actual path to your downloaded JavaFX SDK   folder
-  ---
+---
+
 
 ## 🌐 Web Version (Live)
 
