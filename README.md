@@ -3,6 +3,32 @@
 MediMart is a **JavaFX-based desktop application** designed to modernize and automate pharmacy operations, including inventory management, customer shopping, order placement, billing, and authentication.  
 The system is built with a clean **MVC architecture**, modular services, SQLite integration, and a polished JavaFX UI.
 
+---## 🏷️ Release
+
+🔗 **Download MediMart Executable JAR**:  
+[**MediMart.jar** - Version 1.0](https://github.com/Jahidul183019/MediMart/releases/download/v1.0/MediMart.jar)
+
+> **MediMart** can be downloaded as a **JAR file**. You can run this directly on your desktop using the command below.
+
+---
+
+## 🔧 How to Run the Application (without IntelliJ IDEA)
+
+1. **Download the JAR file** from the link above.
+
+2. **Ensure you have Java 17+ and JavaFX 25** installed. Download JavaFX SDK from [Gluon JavaFX SDK](https://gluonhq.com/products/javafx/).
+
+3. **Run the JAR File in Terminal**:
+
+   ### For macOS/Linux:
+   ```bash
+   java --module-path /path/to/javafx-sdk-25.0.1/lib --add-modules javafx.controls,javafx.fxml -jar MediMart.jar
+   ```
+  ### For Windows:
+```bash
+java --module-path "C:\path\to\javafx-sdk-25.0.1\lib" --add-modules javafx.controls,javafx.fxml -jar MediMart.jar
+```
+> Make sure to replace /path/to/javafx-sdk-25.0.1/lib with the actual path to your downloaded JavaFX SDK folder
 ---
 
 ## 🌐 Web Version (Live)
