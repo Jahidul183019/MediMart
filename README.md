@@ -30,8 +30,6 @@ The system is built with a clean **MVC architecture**, modular services, SQLite 
    ```
   ### For Windows:
   ```bash
- ### For Windows:
-```bash
 java ^
 --module-path "C:\path\to\javafx-sdk-25.0.1\lib" ^
 --add-modules javafx.controls,javafx.fxml ^
