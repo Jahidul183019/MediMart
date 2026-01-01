@@ -3,7 +3,8 @@
 MediMart is a **JavaFX-based desktop application** designed to modernize and automate pharmacy operations, including inventory management, customer shopping, order placement, billing, and authentication.  
 The system is built with a clean **MVC architecture**, modular services, SQLite integration, and a polished JavaFX UI.
 
----## 🏷️ Release
+---
+## 🏷️ Release
 
 🔗 **Download MediMart Executable JAR**:  
 [**MediMart.jar** - Version 1.0](https://github.com/Jahidul183019/MediMart/releases/download/v1.0/MediMart.jar)
